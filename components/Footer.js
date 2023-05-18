@@ -78,7 +78,7 @@ function Footer() {
               // backgroundColor:'yellowgreen'
             }}
           >
-            <Typography fontSize="30px">LuckyChamp</Typography>
+            <Typography fontSize="30px">LuckyCharm</Typography>
           </Box>
 
           <Stack
@@ -148,7 +148,7 @@ function Footer() {
                 }}
               >
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  info@luckychamp.com
+                  info@luckycharm.com
                 </Typography>
               </Box>
             </Box>
