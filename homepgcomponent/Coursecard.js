@@ -6,9 +6,9 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import appdev from "../assests/app developement.png";
 import webdev from "../assests/web developemet.png";
-import PLC from "../assests/PLC Programming.png";
+import PLC from "../assests/PLC programming.png";
 import auduin from "../assests/auduino code.png";
-import Embedded from "../assests/Embedded System.png";
+import Embedded from "../assests/embedded system.png";
 import Image from "next/image";
 import { Box, Stack } from "@mui/material";
 
