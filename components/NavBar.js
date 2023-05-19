@@ -53,12 +53,12 @@ function NavBar() {
     <>
       <Stack
         flex={1}
-        direction="row"
+        direction='row'
         className="animate__animated animate__backInDown"
         sx={{
-          display:{
-            xl:"flex",
-            lg: "flex",
+          flexDirection:{
+            xl:"row",
+            lg: "row",
             md: "none",
             sm: "none",
             xs: "none"},
@@ -67,7 +67,7 @@ function NavBar() {
           justifyContent: "space-around",
           margin: "10 0",
           padding: "10px 0",
-          backgroundColor:'#fff'
+          backgroundColor:'#e6b3ff'
         }}
       >
         <Box
