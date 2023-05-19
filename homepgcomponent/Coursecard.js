@@ -28,6 +28,13 @@ export default function Coursecard() {
                 sm:'column',
                 xs:'column',
             },
+            gap:{
+                xl:2,
+                lg:2,
+                md:2,
+                sm:2,
+                xs:2,
+            },
             width: "100%",
             justifyContent: "space-around",
           }}
@@ -179,6 +186,13 @@ export default function Coursecard() {
                 sm:'column',
                 xs:'column',
             }, 
+            gap:{
+                xl:2,
+                lg:2,
+                md:2,
+                sm:2,
+                xs:2,
+            },
             width: "100%",
             justifyContent: "space-around",
           }}
