@@ -41,12 +41,12 @@ function Footer() {
           direction="row"
           flex={1}
           sx={{
-            margin: "0 60px",
-            padding: "10px",
+            margin: "20px 60px",
+            padding: "20px",
             alignItems: "center",
             justifyContent: "space-around",
-            color: "#b5bbbd",
-            //   backgroundColor:'palegreen'
+            color: "#b5bbbd"
+              // backgroundColor:'palegreen'
           }}
         >
           {Nav.map((item, index) => {
@@ -56,10 +56,14 @@ function Footer() {
                 sx={{
                   cursor: "pointer",
                   fontSize: "15px",
-                  color: "#",
-                  "&:hover": {
-                    color: "#0eb7f0",
-                  },
+                  padding:'10px 15px',
+                  borderRadius:'10px',
+                  transition:'1s',
+                  "&:hover":{
+                    boxShadow: "1px 1px 10px #b434eb",
+                    color: "#eb8c34",
+                    transition:'0.3s'
+                  }
                 }}
               >
                 {item.title}
@@ -107,7 +111,7 @@ function Footer() {
                   lineHeight: "3em",
                 }}
               >
-                Service
+                Our Service
               </Box>
               <Box
                 sx={{

@@ -102,6 +102,7 @@ function NavBar() {
                     color: "#eb8c34",
                   },
                 }}
+                onClick={()=>{router.push(item.to)}}
               >
                 {item.title}
               </Typography>

@@ -66,7 +66,13 @@ function Homepg() {
                 color: "black",
                 lineHeight: "2em",
                 backgroundColor: "#b434eb",
-                width: "20%",
+                width:{
+                  xl:"20%",
+                  lg:"20%",
+                  md:"40%",
+                  sm:"40%",
+                  xs:"40%",
+              },
                 borderRadius: "20px",
                 "&:hover": {
                   color: "#fff",
