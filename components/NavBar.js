@@ -44,7 +44,7 @@ function NavBar() {
       to: "/service",
     },
     {
-      title: "Contact us",
+      title: "Contact",
       to: "/contact",
     },
   ];
@@ -59,9 +59,9 @@ function NavBar() {
           flexDirection:{
             xl:"row",
             lg: "row",
-            md: "none",
-            sm: "none",
-            xs: "none"},
+            md: "column",
+            sm: "column",
+            xs: "column"},
           width: "100%",
           textAlign: "center",
           justifyContent: "space-around",

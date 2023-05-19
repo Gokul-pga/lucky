@@ -68,6 +68,10 @@ function Homepg() {
                 backgroundColor: "#b434eb",
                 width: "20%",
                 borderRadius: "20px",
+                "&:hover": {
+                  color: "#fff",
+                  backgroundColor: "black",
+                },
               }}
             >
               Explore!
