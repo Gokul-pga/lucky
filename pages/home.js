@@ -17,7 +17,6 @@ function Homepg() {
             sx={{
               flexDirection: "column",
               width: "80%",
-              border: "2px #bfbebb solid",
               padding: "40px 20px",
               margin: "10px 0 0 50px",
               boxShadow: "10px 10px 5px #cccccc",

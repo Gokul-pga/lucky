@@ -24,9 +24,9 @@ export default function Coursecard() {
             flexDirection:{
                 xl:'row',
                 lg:'row',
-                md:'row',
-                sm:'row',
-                xs:'row',
+                md:'column',
+                sm:'column',
+                xs:'column',
             },
             width: "100%",
             justifyContent: "space-around",
@@ -34,7 +34,13 @@ export default function Coursecard() {
         >
           <Card
             sx={{
-              width: "30%",
+              width:{
+                xl:'30%',
+                lg:'30%',
+                md:'100%',
+                sm:'100%',
+                xs:'100%',
+            },
               padding: "10px 0",
               borderRadius: "20px",
               textAlign: "center",
@@ -74,7 +80,13 @@ export default function Coursecard() {
 
           <Card
             sx={{
-              width: "30%",
+                width:{
+                    xl:'30%',
+                    lg:'30%',
+                    md:'100%',
+                    sm:'100%',
+                    xs:'100%',
+                },
               padding: "10px 0",
               borderRadius: "20px",
               textAlign: "center",
@@ -114,7 +126,13 @@ export default function Coursecard() {
 
           <Card
             sx={{
-              width: "30%",
+                width:{
+                    xl:'30%',
+                    lg:'30%',
+                    md:'100%',
+                    sm:'100%',
+                    xs:'100%',
+                },
               padding: "10px 0",
               borderRadius: "20px",
               textAlign: "center",
@@ -157,17 +175,23 @@ export default function Coursecard() {
             flexDirection:{
                 xl:'row',
                 lg:'row',
-                md:'row',
-                sm:'row',
-                xs:'row',
-            },
+                md:'column',
+                sm:'column',
+                xs:'column',
+            }, 
             width: "100%",
             justifyContent: "space-around",
           }}
         >
           <Card
             sx={{
-              width: "30%",
+                width:{
+                    xl:'30%',
+                    lg:'30%',
+                    md:'100%',
+                    sm:'100%',
+                    xs:'100%',
+                },
               borderRadius: "20px",
               padding: "10px 0",
               textAlign: "center",
@@ -207,7 +231,13 @@ export default function Coursecard() {
 
           <Card
             sx={{
-              width: "30%",
+                width:{
+                    xl:'30%',
+                    lg:'30%',
+                    md:'100%',
+                    sm:'100%',
+                    xs:'100%',
+                },
               borderRadius: "20px",
               padding: "10px 0",
               textAlign: "center",
