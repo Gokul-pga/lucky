@@ -55,11 +55,11 @@ function Work() {
                 display: "flex",
                 flexDirection: "column",
                 width:{
-                    xl:'50%',
-                    lg:'50%',
-                    md:'100%',
-                    sm:'100%',
-                    xs:'100%',
+                    xl:'40%',
+                    lg:'40%',
+                    md:'95%',
+                    sm:'95%',
+                    xs:'95%',
                 },
                 alignItems: "center",
                 padding: "10px 20px",
@@ -110,17 +110,37 @@ function Work() {
             </Box>
           </Stack>
 
-          <Stack  gap={2}
-            sx={{
-              flexDirection: "row",
-              padding: "10px 20px",
-              // backgroundColor:'paleturquoise',
-            }}>
+          <Stack
+            gap={2}
+            sx={{width:'100%',
+                flexDirection:{
+                    xl:'row',
+                    lg:'row',
+                    md:'column',
+                    sm:'column',
+                    xs:'column',
+                },
+                padding:{
+                    xl:'10px 20px',
+                    lg:'10px 20px',
+                    md:'5px 5px',
+                    sm:'5px 5px',
+                    xs:'5px 5px',
+                },
+              backgroundColor:'#e6e6e6',
+            }}
+          >
           <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                width: "50%",
+                width:{
+                  xl:'50%',
+                  lg:'50%',
+                  md:'95%',
+                  sm:'95%',
+                  xs:'95%',
+              },
                 alignItems: "center",
                 padding: "10px 20px",
                 justifyContent: "space-around",
