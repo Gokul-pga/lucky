@@ -9,7 +9,7 @@ function Work() {
       <Layout>
         <Stack
           flex={1}
-          gap={3}
+          gap={5}
           sx={{
             width: "100%",
             flexDirection:'column'
@@ -28,9 +28,9 @@ function Work() {
                 padding:{
                     xl:'10px 20px',
                     lg:'10px 20px',
-                    md:'5px 5px',
-                    sm:'5px 5px',
-                    xs:'5px 5px',
+                    md:'10px 20px',
+                    sm:'10px 20px',
+                    xs:'10px 20px',
                 },
               backgroundColor:'#e6e6e6',
             }}
@@ -46,8 +46,9 @@ function Work() {
               <Image
                 src={require("../assests/webdev.gif")}
                 alt="Web Developement"
-                width="10%"
-                height="100px"
+                width='700'
+                height="500"
+                textAlign='center'
               />
             </Box>
             <Box
@@ -121,13 +122,12 @@ function Work() {
                     xs:'column',
                 },
                 padding:{
-                    xl:'10px 20px',
-                    lg:'10px 20px',
-                    md:'5px 5px',
-                    sm:'5px 5px',
-                    xs:'5px 5px',
-                },
-              backgroundColor:'#e6e6e6',
+                  xl:'10px 20px',
+                  lg:'10px 20px',
+                  md:'10px 20px',
+                  sm:'10px 20px',
+                  xs:'10px 20px',
+              },
             }}
           >
           <Box
@@ -186,8 +186,8 @@ function Work() {
               <Image
                 src={require("../assests/appdev.gif")}
                 alt="Web Developement"
-                width="10%"
-                height="100px"
+                width='700'
+                height="500"
               />
             </Box>
           </Stack>
@@ -195,8 +195,20 @@ function Work() {
           <Stack
             gap={2}
             sx={{
-              flexDirection: "row",
-              padding: "10px 20px",
+                flexDirection:{
+                    xl:'row',
+                    lg:'row',
+                    md:'column',
+                    sm:'column',
+                    xs:'column',
+                },
+                padding:{
+                  xl:'10px 20px',
+                  lg:'10px 20px',
+                  md:'10px 20px',
+                  sm:'10px 20px',
+                  xs:'10px 20px',
+              },
               backgroundColor:'#e6e6e6',
             }}
           >
@@ -204,25 +216,32 @@ function Work() {
               <Image
                 src={require("../assests/embeddedsystem.gif")}
                 alt="Web Developement"
-                width="10%"
-                height="100px"
+                width="700"
+                height="500"
 
               />
             </Box>
             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                width: "50%",
-                alignItems: "center",
-                padding: "10px 20px",
-                justifyContent: "space-around",
-              }}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width:{
+                      xl:'40%',
+                      lg:'40%',
+                      md:'95%',
+                      sm:'95%',
+                      xs:'95%',
+                  },
+                  alignItems: "center",
+                  padding: "10px 20px",
+                  justifyContent: "space-around",
+                  backgroundColor:'palegreen'
+                }}
             >
               <Typography
                 sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
               >
-                Web Developement
+                Embedded System
               </Typography>
               <Typography  sx={{
                   fontSize: "16px",
@@ -264,24 +283,42 @@ function Work() {
 
           <Stack  gap={2}
             sx={{
-              flexDirection: "row",
-              padding: "10px 20px",
-              // backgroundColor:'paleturquoise',
+                flexDirection:{
+                    xl:'row',
+                    lg:'row',
+                    md:'column',
+                    sm:'column',
+                    xs:'column',
+                },
+                padding:{
+                  xl:'10px 20px',
+                  lg:'10px 20px',
+                  md:'10px 20px',
+                  sm:'10px 20px',
+                  xs:'10px 20px',
+              },
             }}>
           <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                width: "50%",
-                alignItems: "center",
-                padding: "10px 20px",
-                justifyContent: "space-around",
-              }}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width:{
+                      xl:'40%',
+                      lg:'40%',
+                      md:'95%',
+                      sm:'95%',
+                      xs:'95%',
+                  },
+                  alignItems: "center",
+                  padding: "10px 20px",
+                  justifyContent: "space-around",
+                  backgroundColor:'palegreen'
+                }}
             >
               <Typography
                 sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
               >
-                App Developement
+                Arduino Programming
               </Typography>
               <Typography
                 sx={{
@@ -318,8 +355,8 @@ function Work() {
               <Image
                 src={require("../assests/arduino.gif")}
                 alt="Web Developement"
-                width="10%"
-                height="100px"
+                width='700'
+                height="500"
               />
             </Box>
           </Stack>
@@ -327,8 +364,20 @@ function Work() {
           <Stack
             gap={2}
             sx={{
-              flexDirection: "row",
-              padding: "10px 20px",
+                flexDirection:{
+                    xl:'row',
+                    lg:'row',
+                    md:'column',
+                    sm:'column',
+                    xs:'column',
+                },
+                padding:{
+                  xl:'10px 20px',
+                  lg:'10px 20px',
+                  md:'10px 20px',
+                  sm:'10px 20px',
+                  xs:'10px 20px',
+              },
               backgroundColor:'#e6e6e6',
             }}
           >
@@ -341,19 +390,27 @@ function Work() {
               />
             </Box>
             <Box
-              sx={{
+               sx={{
                 display: "flex",
                 flexDirection: "column",
-                width: "50%",
+                width:{
+                    xl:'40%',
+                    lg:'40%',
+                    md:'95%',
+                    sm:'95%',
+                    xs:'95%',
+                },
                 alignItems: "center",
                 padding: "10px 20px",
                 justifyContent: "space-around",
+                backgroundColor:'palegreen',
+                gap:2
               }}
             >
               <Typography
                 sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
               >
-                Web Developement
+                PLC programming
               </Typography>
               <Typography  sx={{
                   fontSize: "16px",
