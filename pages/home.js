@@ -1,8 +1,6 @@
 import Layout from "@/components/Layout";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
-import logo from "../assests/logo.png";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import Coursecard from "@/homepgcomponent/Coursecard";
 

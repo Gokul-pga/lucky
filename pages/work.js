@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, CardMedia, Stack, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 
@@ -9,12 +9,19 @@ function Work() {
       <Layout>
         <Stack
           flex={1}
-          gap={5}
           sx={{
             width: "100%",
-            flexDirection:'column'
+            flexDirection:'column',
+            gap:{
+              xl:5,
+              lg:5,
+              md:7,
+              sm:7,
+              xs:7,
+          },
           }}
         >
+          {/* ------------------------------------- Web Developement start----------------------------------- */}
           <Stack
             gap={2}
             sx={{
@@ -32,7 +39,7 @@ function Work() {
                     sm:'10px 20px',
                     xs:'10px 20px',
                 },
-              backgroundColor:'#e6e6e6',
+              backgroundColor:'#f2f2f2',
             }}
           >
             <Box sx={{ width:{
@@ -46,10 +53,13 @@ function Work() {
               <Image
                 src={require("../assests/webdev.gif")}
                 alt="Web Developement"
+                layout="responsive"
                 width='700'
                 height="500"
-                textAlign='center'
               />
+              <CardMedia
+        image
+      />
             </Box>
             <Box
               sx={{
@@ -62,10 +72,9 @@ function Work() {
                     sm:'95%',
                     xs:'95%',
                 },
-                alignItems: "center",
+                textAlign:'left',
                 padding: "10px 20px",
                 justifyContent: "space-around",
-                backgroundColor:'palegreen'
               }}
             >
               <Typography
@@ -110,6 +119,11 @@ function Work() {
               </Typography>
             </Box>
           </Stack>
+          {/* ------------------------------------- Web Developement end----------------------------------- */}
+
+
+
+          {/* ------------------------------------- App Developement start----------------------------------- */}
 
           <Stack
             gap={2}
@@ -141,7 +155,7 @@ function Work() {
                   sm:'95%',
                   xs:'95%',
               },
-                alignItems: "center",
+              textAlign:'left',
                 padding: "10px 20px",
                 justifyContent: "space-around",
               }}
@@ -182,15 +196,27 @@ function Work() {
               </Typography>
             </Box>
 
-            <Box sx={{ width: "60%", borderRadius: "10px" }}>
+            <Box sx={{ width:{
+                  xl:'60%',
+                  lg:'60%',
+                  md:'100%',
+                  sm:'100%',
+                  xs:'100%',
+              },
+               borderRadius: "10px" }}>
               <Image
                 src={require("../assests/appdev.gif")}
                 alt="Web Developement"
+                layout="responsive"
                 width='700'
                 height="500"
               />
             </Box>
           </Stack>
+          {/* ------------------------------------- App Developement End----------------------------------- */}
+
+
+          {/* --------------------------------- Embedded System Developement start----------------------------- */}
 
           <Stack
             gap={2}
@@ -209,13 +235,21 @@ function Work() {
                   sm:'10px 20px',
                   xs:'10px 20px',
               },
-              backgroundColor:'#e6e6e6',
+              backgroundColor:'#f2f2f2',
             }}
           >
-            <Box sx={{ width: "60%", borderRadius: "10px",alignItems:'center' }}>
+            <Box sx={{ width:{
+                  xl:'60%',
+                  lg:'60%',
+                  md:'100%',
+                  sm:'100%',
+                  xs:'100%',
+              },
+               borderRadius: "10px" }}>
               <Image
                 src={require("../assests/embeddedsystem.gif")}
                 alt="Web Developement"
+                layout="responsive"
                 width="700"
                 height="500"
 
@@ -232,10 +266,9 @@ function Work() {
                       sm:'95%',
                       xs:'95%',
                   },
-                  alignItems: "center",
+                  textAlign:'left',
                   padding: "10px 20px",
                   justifyContent: "space-around",
-                  backgroundColor:'palegreen'
                 }}
             >
               <Typography
@@ -280,6 +313,10 @@ function Work() {
               </Typography>
             </Box>
           </Stack>
+          {/* --------------------------------- Embedded System Developement End----------------------------- */}
+
+
+          {/* --------------------------------- Arduino System Developement start----------------------------- */}
 
           <Stack  gap={2}
             sx={{
@@ -309,10 +346,9 @@ function Work() {
                       sm:'95%',
                       xs:'95%',
                   },
-                  alignItems: "center",
+                  textAlign:'left',
                   padding: "10px 20px",
                   justifyContent: "space-around",
-                  backgroundColor:'palegreen'
                 }}
             >
               <Typography
@@ -351,16 +387,28 @@ function Work() {
               </Typography>
             </Box>
 
-            <Box sx={{ width: "60%", borderRadius: "10px" }}>
+            <Box sx={{ width:{
+                  xl:'60%',
+                  lg:'60%',
+                  md:'100%',
+                  sm:'100%',
+                  xs:'100%',
+              },
+               borderRadius: "10px" }}>
               <Image
                 src={require("../assests/arduino.gif")}
                 alt="Web Developement"
+                layout="responsive"
                 width='700'
                 height="500"
               />
             </Box>
           </Stack>
+          {/* --------------------------------- Arduino System Developement End----------------------------- */}
 
+
+
+          {/* --------------------------------- PLC Programming Developement Start----------------------------- */}
           <Stack
             gap={2}
             sx={{
@@ -378,15 +426,25 @@ function Work() {
                   sm:'10px 20px',
                   xs:'10px 20px',
               },
-              backgroundColor:'#e6e6e6',
+              backgroundColor:'#f2f2f2',
+              marginBottom:'25px'
             }}
           >
-            <Box sx={{ width: "60%", borderRadius: "10px" }}>
+             <Box sx={{ width:{
+                  xl:'60%',
+                  lg:'60%',
+                  md:'100%',
+                  sm:'100%',
+                  xs:'100%',
+              },
+               borderRadius: "10px" }}>
               <Image
                 src={require("../assests/plcimg.gif")}
                 alt="Web Developement"
-                width="10%"
-                height="100px"
+                layout="responsive"
+                width='700'
+                height="500"
+                
               />
             </Box>
             <Box
@@ -400,10 +458,9 @@ function Work() {
                     sm:'95%',
                     xs:'95%',
                 },
-                alignItems: "center",
+                textAlign:'left',
                 padding: "10px 20px",
                 justifyContent: "space-around",
-                backgroundColor:'palegreen',
                 gap:2
               }}
             >
@@ -449,6 +506,8 @@ function Work() {
               </Typography>
             </Box>
           </Stack>
+          {/* --------------------------------- PLC Programming Developement End----------------------------- */}
+
 
         </Stack>
       </Layout>

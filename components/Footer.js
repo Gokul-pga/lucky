@@ -1,7 +1,9 @@
 import { Box, Stack, Typography } from "@mui/material";
+import { useRouter } from "next/router";
 import React from "react";
 
 function Footer() {
+  const router = useRouter();
   const Nav = [
     {
       title: "Home",
@@ -20,7 +22,7 @@ function Footer() {
       to: "/service",
     },
     {
-      title: "Contact us",
+      title: "Contact",
       to: "/contact",
     },
   ];
@@ -52,6 +54,7 @@ function Footer() {
           {Nav.map((item, index) => {
             return (
               <Typography
+              
                 key={index}
                 sx={{
                   cursor: "pointer",
@@ -65,6 +68,7 @@ function Footer() {
                     transition:'0.3s'
                   }
                 }}
+                onClick={()=>{router.push(item.to)}}
               >
                 {item.title}
               </Typography>

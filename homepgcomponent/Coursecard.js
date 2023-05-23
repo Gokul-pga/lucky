@@ -19,6 +19,7 @@ export default function Coursecard() {
         direction="column"
         sx={{ width: "100%", margin: "30px 0 0 0", gap: 3 }}
       >
+       
         <Stack
           sx={{
             flexDirection:{
@@ -39,6 +40,7 @@ export default function Coursecard() {
             justifyContent: "space-around",
           }}
         >
+           {/* ---------------- App developement Start -------------------- */}
           <Card
             sx={{
               width:{
@@ -85,6 +87,10 @@ export default function Coursecard() {
             </Box>
           </Card>
 
+           {/* ---------------- App developement end -------------------- */}
+
+
+           {/* ---------------- web developement Start -------------------- */}
           <Card
             sx={{
                 width:{
@@ -130,7 +136,9 @@ export default function Coursecard() {
               </Button>
             </Box>
           </Card>
+          {/* ---------------- App developement end -------------------- */}
 
+{/* ---------------- Arduino developement Start -------------------- */}
           <Card
             sx={{
                 width:{
@@ -175,6 +183,9 @@ export default function Coursecard() {
               </Button>
             </Box>
           </Card>
+
+{/* ---------------- Arduino developement end -------------------- */}
+
         </Stack>
 
         <Stack
@@ -197,6 +208,9 @@ export default function Coursecard() {
             justifyContent: "space-around",
           }}
         >
+
+{/* ---------------- Embedded developement Start -------------------- */}
+
           <Card
             sx={{
                 width:{
@@ -243,6 +257,10 @@ export default function Coursecard() {
             </Box>
           </Card>
 
+{/* ---------------- Embedded developement end -------------------- */}
+
+{/* ---------------- PLC developement start -------------------- */}
+
           <Card
             sx={{
                 width:{
@@ -288,6 +306,8 @@ export default function Coursecard() {
               </Button>
             </Box>
           </Card>
+{/* ---------------- PLC developement end -------------------- */}
+
         </Stack>
       </Stack>
     </>
