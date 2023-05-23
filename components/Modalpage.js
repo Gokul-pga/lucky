@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import "animate.css"
 
 const style = {
   position: "absolute",
@@ -30,7 +31,7 @@ function Modalpage({ open, setOpen }) {
 
   return (
     <>
-      <Modal
+      <Modal 
         open={open}
         sx={{
           display: "flex",

@@ -132,7 +132,7 @@ function Footer() {
                   Embedded System
                 </Typography>
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Arduino
+                  Automation
                 </Typography>
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
                   PLC Programming

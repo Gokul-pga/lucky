@@ -22,7 +22,7 @@ function Work() {
           }}
         >
           {/* ------------------------------------- Web Developement start----------------------------------- */}
-          <Stack
+          <Stack 
             gap={2}
             sx={{
                 flexDirection:{
@@ -39,10 +39,11 @@ function Work() {
                     sm:'10px 20px',
                     xs:'10px 20px',
                 },
-              backgroundColor:'#f2f2f2',
+                backgroundColor:'#d4c3c3be',
             }}
           >
-            <Box sx={{ width:{
+            <Box className="animate__animated animate__slideInLeft"
+             sx={{ width:{
                   xl:'60%',
                   lg:'60%',
                   md:'100%',
@@ -61,7 +62,7 @@ function Work() {
         image
       />
             </Box>
-            <Box
+            <Box className="animate__animated animate__slideInRight"
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -127,7 +128,7 @@ function Work() {
 
           <Stack
             gap={2}
-            sx={{width:'100%',
+            sx={{
                 flexDirection:{
                     xl:'row',
                     lg:'row',
@@ -141,10 +142,10 @@ function Work() {
                   md:'10px 20px',
                   sm:'10px 20px',
                   xs:'10px 20px',
-              },
+              }
             }}
           >
-          <Box
+          <Box className="animate__animated animate__slideInLeft"
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -196,7 +197,8 @@ function Work() {
               </Typography>
             </Box>
 
-            <Box sx={{ width:{
+            <Box className="animate__animated animate__slideInRight"
+             sx={{ width:{
                   xl:'60%',
                   lg:'60%',
                   md:'100%',
@@ -235,10 +237,11 @@ function Work() {
                   sm:'10px 20px',
                   xs:'10px 20px',
               },
-              backgroundColor:'#f2f2f2',
+              backgroundColor:'#d4c3c3be',
             }}
           >
-            <Box sx={{ width:{
+            <Box className="animate__animated animate__slideInLeft"
+             sx={{ width:{
                   xl:'60%',
                   lg:'60%',
                   md:'100%',
@@ -248,14 +251,14 @@ function Work() {
                borderRadius: "10px" }}>
               <Image
                 src={require("../assests/embeddedsystem.gif")}
-                alt="Web Developement"
+                alt="Embedded System"
                 layout="responsive"
                 width="700"
                 height="500"
 
               />
             </Box>
-            <Box
+            <Box className="animate__animated animate__slideInRight"
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -335,7 +338,7 @@ function Work() {
                   xs:'10px 20px',
               },
             }}>
-          <Box
+          <Box className="animate__animated animate__slideInLeft"
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -354,7 +357,7 @@ function Work() {
               <Typography
                 sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
               >
-                Arduino Programming
+                Automation 
               </Typography>
               <Typography
                 sx={{
@@ -387,7 +390,8 @@ function Work() {
               </Typography>
             </Box>
 
-            <Box sx={{ width:{
+            <Box className="animate__animated animate__slideInRight"
+             sx={{ width:{
                   xl:'60%',
                   lg:'60%',
                   md:'100%',
@@ -426,11 +430,12 @@ function Work() {
                   sm:'10px 20px',
                   xs:'10px 20px',
               },
-              backgroundColor:'#f2f2f2',
+              backgroundColor:'#d4c3c3be',
               marginBottom:'25px'
             }}
           >
-             <Box sx={{ width:{
+             <Box className="animate__animated animate__slideInLeft"
+              sx={{ width:{
                   xl:'60%',
                   lg:'60%',
                   md:'100%',
@@ -440,14 +445,14 @@ function Work() {
                borderRadius: "10px" }}>
               <Image
                 src={require("../assests/plcimg.gif")}
-                alt="Web Developement"
+                alt="PLC Programming"
                 layout="responsive"
                 width='700'
                 height="500"
                 
               />
             </Box>
-            <Box
+            <Box className="animate__animated animate__slideInRight"
                sx={{
                 display: "flex",
                 flexDirection: "column",

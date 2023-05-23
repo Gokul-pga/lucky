@@ -39,10 +39,9 @@ function NavBar() {
 
   return (
     <>
-      <Stack
+      <Stack 
         flex={1}
         direction='row'
-        className="animate__animated animate__backInDown"
         sx={{
           flexDirection:{
             xl:"row",

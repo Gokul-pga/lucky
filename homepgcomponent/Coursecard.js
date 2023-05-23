@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import appdev from "../assests/app developement.png";
 import webdev from "../assests/web developemet.png";
 import PLC from "../assests/PLC programming.png";
-import auduin from "../assests/auduino code.png";
+import automation from "../assests/automation.jpg";
 import Embedded from "../assests/embedded system.png";
 import Image from "next/image";
 import { Box, Stack } from "@mui/material";
@@ -154,13 +154,13 @@ export default function Coursecard() {
             }}
           >
             <Image
-              src={auduin}
+              src={automation}
               component="img"
               alt="Auduino Code"
               height="50"            />
             <CardContent>
               <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>
-                Auduino Code
+                Automation
               </Typography>
               <Typography  sx={{fontSize:'14px',color:"text.secondary"}}>
                 Lizards are a widespread group of squamate reptiles, with over
