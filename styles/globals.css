@@ -2,4 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
+main{
+    background-color: #d4c3c3be;
+}
+:root{
+    --heading-font: 30px;
+    --paragrap-font: 16px;
+}
