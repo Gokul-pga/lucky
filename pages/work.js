@@ -81,6 +81,7 @@ function Work() {
                 textAlign: "left",
                 padding: "10px 20px",
                 justifyContent: "space-evenly",
+                gap: 2,
               }}
             >
               <Typography
@@ -104,9 +105,9 @@ function Work() {
                   color: "#262626",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
-                }}
+                }} 
               >
-                If you're looking for a web development firm that will
+                 If you're looking for a web development firm that will
                 prioritize your business and brand objectives, while also taking
                 into consideration the all-elusive factor of uniqueness, then
                 your search ends with Luckycarm.
@@ -181,6 +182,7 @@ function Work() {
                 textAlign: "left",
                 padding: "10px 20px",
                 justifyContent: "space-evenly",
+                gap: 2,
               }}
             >
               <Typography
@@ -312,6 +314,7 @@ function Work() {
                 textAlign: "left",
                 padding: "10px 20px",
                 justifyContent: "space-evenly",
+                gap: 2,
               }}
             >
               <Typography
@@ -400,6 +403,7 @@ function Work() {
                 textAlign: "left",
                 padding: "10px 20px",
                 justifyContent: "space-evenly",
+                gap: 2,
               }}
             >
               <Typography

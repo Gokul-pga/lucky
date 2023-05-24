@@ -57,8 +57,14 @@ function NavBar() {
           // backgroundColor:'#e6b3ff'
         }}
       >
-        <Box
+        <Box 
           sx={{
+            display:{
+              xl:"block",
+              lg: "block",
+              md: "none",
+              sm: "none",
+              xs: "none"},
             color: "#acafb0",
             // backgroundColor:'grey'
           }}
@@ -66,22 +72,30 @@ function NavBar() {
           <Image src={logo} alt="image" height="80" width="180" />
         </Box>
 
+        <Box sx={{
+          display:{
+            xl:"block",
+            lg: "block",
+            md: "none",
+            sm: "none",
+            xs: "none"},
+            width: "40%",
+            // backgroundColor:'palegoldenrodl',
+            padding:'20px 15px'
+        }}>
         <Stack
           direction="row"
-          sx={{
-            width: "40%",
-            alignItems: "center",
-            justifyContent: "space-around",
-            color: "#080808",
-            fontWeight: "bold",
-            // backgroundColor:'grey'
-          }}
+          
         >
           {Nav.map((item, index) => {
             return (
               <Typography
                 key={index}
                 sx={{
+            padding:'10px 8px',
+            // backgroundColor:'palegreen',
+            width:'100%',
+            fontWeight: "500",
                   cursor: "pointer",
                   fontSize: "15px",
                   color: "#",
@@ -96,7 +110,15 @@ function NavBar() {
             );
           })}
         </Stack>
-        <Box>
+        </Box>
+        <Box sx={{
+           display:{
+          xl:"block",
+          lg: "block",
+          md: "none",
+          sm: "none",
+          xs: "none"},
+        }}>
           <Typography
             sx={{
               alignItems: "center",

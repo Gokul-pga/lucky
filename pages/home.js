@@ -28,58 +28,80 @@ function Homepg() {
             <Box
               sx={{
                 display: "flex",
-                flexDirection:{
-                  xl:'row',
-                  lg:'row',
-                  md:'column',
-                  sm:'column',
-                  xs:'column',
-              },
-                width: "70%",
-                gap:{
-                  xl:2,
-                  lg:2,
-                  md:0,
-                  sm:0,
-                  xs:0,
-              },
+                flexDirection: {
+                  xl: "row",
+                  lg: "row",
+                  md: "column",
+                  sm: "column",
+                  xs: "column",
+                },
+                width: "100%",
+                gap: {
+                  xl: 2,
+                  lg: 2,
+                  md: 0,
+                  sm: 0,
+                  xs: 0,
+                },
+                // bgcolor: "greenyellow",
               }}
             >
               <Typography
-                sx={{ fontSize: "35px", fontWeight: "bold", color: "#eb8c34" }}
+                sx={{
+                  width: "100%",
+                  fontSize: {
+                    xl: "30px",
+                    lg: "30px",
+                    md: "20px",
+                    sm: "20px",
+                    xs: "20px",
+                  },
+                  // bgcolor: "palegreen",
+                  fontWeight: "bold",
+                }}
               >
-                Welcome To
+                <span style={{ color: "#eb8c34" }}> Welcome To</span> LuckyCharm Technologies
               </Typography>
-              <Typography sx={{ fontSize: "35px", fontWeight: "bold" }}>
-                {" "}
-                LuckyCharm Technologies
-              </Typography>
-             
             </Box>
-            <Typography sx={{ fontSize: "20px", lineHeight: "2em" }}>
-              Let's Work With together
-            </Typography>
-            <Button
-              sx={{
-                color: "black",
-                lineHeight: "2em",
-                backgroundColor: "#b434eb",
-                width:{
-                  xl:"20%",
-                  lg:"20%",
-                  md:"40%",
-                  sm:"40%",
-                  xs:"40%",
-              },
-                borderRadius: "20px",
-                "&:hover": {
-                  color: "#fff",
-                  backgroundColor: "black",
-                },
-              }}
-            >
-              Explore!
-            </Button>
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: {
+                    xl: "20pxpx",
+                    lg: "20pxpx",
+                    md: "16px",
+                    sm: "16px",
+                    xs: "16px",
+                  },
+                  lineHeight: "2em",
+                }}
+              >
+                Let's Work With together
+              </Typography>
+            </Box>
+            <Box>
+              <Button
+                sx={{
+                  color: "black",
+                  lineHeight: "2em",
+                  backgroundColor: "#b434eb",
+                  padding: {
+                    xl: "5px 20px",
+                    lg: "5px 20px",
+                    md: "3px 10px",
+                    sm: "3px 10px",
+                    xs: "3px 10px",
+                  },
+                  borderRadius: "10px",
+                  "&:hover": {
+                    color: "#fff",
+                    backgroundColor: "black",
+                  },
+                }}
+              >
+                Explore!
+              </Button>
+            </Box>
           </Stack>
 
           <Coursecard />

@@ -6,7 +6,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "animate.css"
 
 const style = {
@@ -27,7 +27,33 @@ const style = {
 };
 
 function Modalpage({ open, setOpen }) {
+  const [inputdata, setInputdata] = useState({
+    name:'',
+    email:'',
+    subject:'',
+    message:''
+  })
+  const {name,email,subject,message} = inputdata;
+  const [validator, setValidator] = useState(false)
+
   const handleClose = () => setOpen(false);
+
+  const handlesubmit = () => {
+    if (name !== '' && email !== '' && subject !== '' && message !== '') {
+      setInputdata({
+        name:'',
+    email:'',
+    subject:'',
+    message:''
+      })
+      console.log(inputdata);
+      setValidator(false)
+    }
+    else{
+      setValidator(true)
+      
+    }
+  }
 
   return (
     <>
@@ -57,6 +83,7 @@ function Modalpage({ open, setOpen }) {
           >
             Let's Start With <span style={{ color: "#eb8c34" }}>Together.</span>
           </Typography>
+          {validator && (<Typography sx={{color:'red',margin:'0 10px'}}>* All Fields are mandatory</Typography>)}
           <Box
             gap={2}
             sx={{
@@ -66,21 +93,34 @@ function Modalpage({ open, setOpen }) {
               color: "#6699ff",
             }}
           >
-            <TextField id="outlined" variant="standard" label="Name" />
+            <TextField 
+            id="outlined"
+             variant="standard"
+              label="Name" 
+              value={name}
+              onChange={(e) => {setInputdata({...inputdata,name:e.target.value})}}
+              />
+
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Email"
+              value={email}
+              onChange={(e) =>{setInputdata({...inputdata,email:e.target.value})}}
             />
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Subject"
+              value={subject}
+              onChange={(e) =>{setInputdata({...inputdata,subject:e.target.value})}}
             />
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Message"
+              value={message}
+              onChange={(e) =>{setInputdata({...inputdata,message:e.target.value})}}
             />
           </Box>
           <Box
@@ -102,6 +142,7 @@ function Modalpage({ open, setOpen }) {
                     color:'#fff'
                 }
               }}
+              onClick={() => {handlesubmit()}}
             >
               Send Message
             </Button>
