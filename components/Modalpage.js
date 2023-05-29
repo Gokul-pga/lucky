@@ -23,7 +23,7 @@ const style = {
     xs: "60%",
   },  boxShadow: 24,
   color: "Black",
-  p: 4,
+  p: 2,
 };
 
 function Modalpage({ open, setOpen }) {
@@ -72,7 +72,7 @@ function Modalpage({ open, setOpen }) {
 
   return (
     <>
-      <Modal 
+      <Modal className="animate__animated animate__zoomIn"
         open={open}
         sx={{
           display: "flex",

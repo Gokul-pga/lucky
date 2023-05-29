@@ -63,7 +63,6 @@ function Work() {
                 width="700"
                 height="500"
               />
-              <CardMedia image />
             </Box>
             <Box
               className="animate__animated animate__slideInRight"
@@ -122,9 +121,16 @@ function Work() {
               >
                 Having working with websites and applications developement by using HTML, CSS, Javascript, React JS and Next JS for backend technolog we have using MongoDB and MySQL for database to store the datas.
               </Typography>
+              
               <Button
                 sx={{
-                  width: "20%",
+                  width: {
+                    xl: "20%",
+                    lg: "20%",
+                    md: "20%",
+                    sm: "30%",
+                    xs: "30%",
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "black",
@@ -213,7 +219,13 @@ function Work() {
               </Typography>
               <Button
                 sx={{
-                  width: "20%",
+                  width: {
+                    xl: "20%",
+                    lg: "20%",
+                    md: "20%",
+                    sm: "30%",
+                    xs: "30%",
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "black",
@@ -347,7 +359,13 @@ function Work() {
               </Typography>
               <Button
                 sx={{
-                  width: "20%",
+                  width: {
+                    xl: "20%",
+                    lg: "20%",
+                    md: "20%",
+                    sm: "30%",
+                    xs: "30%",
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "black",
@@ -436,7 +454,13 @@ function Work() {
               </Typography>
               <Button
                 sx={{
-                  width: "20%",
+                  width: {
+                    xl: "20%",
+                    lg: "20%",
+                    md: "20%",
+                    sm: "30%",
+                    xs: "30%",
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "black",
