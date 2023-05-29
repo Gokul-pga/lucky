@@ -65,7 +65,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>                
             App Developement
               </Typography>
-              <Typography sx={{fontSize:'14px',color:"text.secondary"}}>
+              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify"}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -73,12 +73,16 @@ export default function Coursecard() {
             <Box>
               <Button
                 sx={{
-                  backgroundColor: "#b434eb",
-                  color: "black",
-                  padding: "5px 15px",
+                  fontWeight:'bold',
+                  borderRadius: "2px",  
+                  transition:'0.5s',
+                  backgroundColor: "black",
+                  color: "#eb8c34",
+                  padding: "5px 10px",
                   "&:hover": {
-                    color: "#fff",
-                    backgroundColor: "black",
+                  borderRadius: "10px",
+                  color: "#fff",
+                    backgroundColor: "#4dc3ff",
                   },
                 }}
               >
@@ -115,7 +119,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>                
             Web Developement
               </Typography>
-              <Typography sx={{fontSize:'14px',color:"text.secondary"}}>
+              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify"}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -123,12 +127,16 @@ export default function Coursecard() {
             <Box>
               <Button
                 sx={{
-                  backgroundColor: "#b434eb",
-                  color: "black",
-                  padding: "5px 15px",
+                  fontWeight:'bold',
+                  borderRadius: "2px",  
+                  transition:'0.5s',
+                  backgroundColor: "black",
+                  color: "#eb8c34",
+                  padding: "5px 10px",
                   "&:hover": {
-                    color: "#fff",
-                    backgroundColor: "black",
+                  borderRadius: "10px",
+                  color: "#fff",
+                    backgroundColor: "#4dc3ff",
                   },
                 }}
               >
@@ -162,7 +170,7 @@ export default function Coursecard() {
               <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>
                 Automation
               </Typography>
-              <Typography  sx={{fontSize:'14px',color:"text.secondary"}}>
+              <Typography  sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify"}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -170,12 +178,16 @@ export default function Coursecard() {
             <Box>
               <Button
                 sx={{
-                  backgroundColor: "#b434eb",
-                  color: "black",
-                  padding: "5px 15px",
+                  fontWeight:'bold',
+                  borderRadius: "2px",  
+                  transition:'0.5s',
+                  backgroundColor: "black",
+                  color: "#eb8c34",
+                  padding: "5px 10px",
                   "&:hover": {
-                    color: "#fff",
-                    backgroundColor: "black",
+                  borderRadius: "10px",
+                  color: "#fff",
+                    backgroundColor: "#4dc3ff",
                   },
                 }}
               >
@@ -235,7 +247,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>                
             Embedded System
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.secondary" textAlign= "justify" >
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -243,12 +255,16 @@ export default function Coursecard() {
             <Box>
               <Button
                 sx={{
-                  backgroundColor: "#b434eb",
-                  color: "black",
-                  padding: "5px 15px",
+                  fontWeight:'bold',
+                  borderRadius: "2px",  
+                  transition:'0.5s',
+                  backgroundColor: "black",
+                  color: "#eb8c34",
+                  padding: "5px 10px",
                   "&:hover": {
-                    color: "#fff",
-                    backgroundColor: "black",
+                  borderRadius: "10px",
+                  color: "#fff",
+                    backgroundColor: "#4dc3ff",
                   },
                 }}
               >
@@ -285,7 +301,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>
              PLC Programming
               </Typography>
-              <Typography sx={{fontSize:'14px',color:"text.secondary"}}>
+              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify",}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -293,12 +309,16 @@ export default function Coursecard() {
             <Box>
               <Button
                 sx={{
-                  backgroundColor: "#b434eb",
-                  color: "black",
-                  padding: "5px 15px",
+                  fontWeight:'bold',
+                  borderRadius: "2px",  
+                  transition:'0.5s',
+                  backgroundColor: "black",
+                  color: "#eb8c34",
+                  padding: "5px 10px",
                   "&:hover": {
-                    color: "#fff",
-                    backgroundColor: "black",
+                  borderRadius: "10px",
+                  color: "#fff",
+                    backgroundColor: "#4dc3ff",
                   },
                 }}
               >

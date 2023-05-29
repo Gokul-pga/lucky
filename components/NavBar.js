@@ -3,7 +3,6 @@ import logo from "../assests/logo.jpeg";
 import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Modalpage from "./Modalpage";
 
 
 
@@ -11,7 +10,6 @@ import Modalpage from "./Modalpage";
 function NavBar() {
   
   const router = useRouter()
-  const [open, setOpen] = useState(false)
 
 
   const Nav = [
@@ -50,11 +48,11 @@ function NavBar() {
             sm: "column",
             xs: "column"},
           width: "100%",
-          textAlign: "center",
+          height:60,
+          alignItems: "center",
           justifyContent: "space-around",
-          margin: "10 0",
-          padding: "10px 0",
-          // backgroundColor:'#e6b3ff'
+          backgroundImage: "linear-gradient(to right, #4dc3ff, #3333ff)"
+
         }}
       >
         <Box 
@@ -69,7 +67,8 @@ function NavBar() {
             // backgroundColor:'grey'
           }}
         >
-          <Image src={logo} alt="image" height="80" width="180" />
+          {/* <Image src={logo} alt="image" height="60" width="200" /> */}
+          <Typography fontSize='30px' color='#fff'>LuckyCharm</Typography>
         </Box>
 
         <Box sx={{
@@ -80,11 +79,11 @@ function NavBar() {
             sm: "none",
             xs: "none"},
             width: "40%",
-            // backgroundColor:'palegoldenrodl',
-            padding:'20px 15px'
+            height:40,
+            backgroundColor:'palegoldenrodl',
         }}>
         <Stack
-          direction="row"
+          direction="row" 
           
         >
           {Nav.map((item, index) => {
@@ -95,10 +94,11 @@ function NavBar() {
             padding:'10px 8px',
             // backgroundColor:'palegreen',
             width:'100%',
-            fontWeight: "500",
+            fontWeight: "600",
                   cursor: "pointer",
                   fontSize: "15px",
-                  color: "#",
+                  color: "#fff",                
+                  transition:'0.3s',
                   "&:hover": {
                     color: "#eb8c34",
                   },
@@ -111,7 +111,7 @@ function NavBar() {
           })}
         </Stack>
         </Box>
-        <Box sx={{
+        {/* <Box sx={{
            display:{
           xl:"block",
           lg: "block",
@@ -129,17 +129,12 @@ function NavBar() {
               fontSize: "20px",
               cursor: "pointer",
             }}
-            onClick={() => {setOpen(true)}}
+            
             
           >
             Contact Our Team
           </Typography>
-          { open && <Modalpage open={open} setOpen={setOpen}/>}
-
-                {/* ---------------------- Modal page Open ------------------------ */}
-
-         
-        </Box>
+        </Box> */}
       </Stack>
     </>
   );

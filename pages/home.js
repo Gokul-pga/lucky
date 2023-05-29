@@ -3,8 +3,11 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useRouter } from "next/router";
 import Coursecard from "@/homepgcomponent/Coursecard";
+import Modalpage from "../components/Modalpage";
+import { useState } from "react";
 
 function Homepg() {
+  const [open, setOpen] = useState(false)
   const router = useRouter();
   return (
     <>
@@ -82,25 +85,29 @@ function Homepg() {
             <Box>
               <Button
                 sx={{
-                  color: "black",
                   lineHeight: "2em",
-                  backgroundColor: "#b434eb",
                   padding: {
                     xl: "5px 20px",
                     lg: "5px 20px",
                     md: "3px 10px",
                     sm: "3px 10px",
                     xs: "3px 10px",
-                  },
-                  borderRadius: "10px",
+                  },fontWeight:'bold',
+                  borderRadius: "2px",  
+                  transition:'0.5s',
+                  backgroundColor: "black",
+                  color: "#eb8c34",
                   "&:hover": {
-                    color: "#fff",
-                    backgroundColor: "black",
+                  borderRadius: "10px",
+                  color: "#fff",
+                    backgroundColor: "#4dc3ff",
                   },
                 }}
+                onClick={() => {setOpen(true)}}
               >
-                Explore!
+                Contact Our Team
               </Button>
+              { open && <Modalpage open={open} setOpen={setOpen}/>}
             </Box>
           </Stack>
 

@@ -45,7 +45,7 @@ function Modalpage({ open, setOpen }) {
     email:'',
     subject:'',
     message:''
-      })
+      }) 
       console.log(inputdata);
       setValidator(false)
     }
@@ -53,6 +53,21 @@ function Modalpage({ open, setOpen }) {
       setValidator(true)
       
     }
+     fetch("http://localhost:5000/register", {
+      method:"POST",
+      crossDomain:true,
+      headers:{
+        "Content-Type":"application/json",
+        Accept:"application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        message,
+      }),
+    }).then((res) => res.json()).then((data) => {console.log(data,"userRegister");
+  });
   }
 
   return (
@@ -132,14 +147,16 @@ function Modalpage({ open, setOpen }) {
           >
             <Button
               sx={{
-                backgroundColor: "#b434eb",
+                backgroundColor: "black",
                 padding: "5px 8px",
-                borderRadius: "10px",
-                color: "#0d0d0d",
+                color: "#fff",
+                borderRadius: "0px",
                 textAlign: "center",
+                transition:'0.3s',
                 "&:hover":{
-                    backgroundColor:'black',
-                    color:'#fff'
+                    backgroundColor:'green',
+                    color:'#fff',
+                    borderRadius: "10px",
                 }
               }}
               onClick={() => {handlesubmit()}}
@@ -149,13 +166,15 @@ function Modalpage({ open, setOpen }) {
             <Button
               onClick={handleClose}
               sx={{
-                backgroundColor: "#b434eb",
+                backgroundColor: "black",
                 padding: "5px 20px",
-                borderRadius: "10px",
-                color: "#0d0d0d",
+                borderRadius: "0px",
+                color: "#fff",
+                transition:'0.3s',
                 textAlign: "center",
                 "&:hover":{
-                    backgroundColor:'black',
+                    backgroundColor:'red',
+                    borderRadius: "10px",
                     color:'#fff'
                 }
               }}

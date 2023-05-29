@@ -134,7 +134,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s'
+                    transition:'0.3s',
+                    bgcolor:'#99ddff'
                   },
                 }}
               >
@@ -222,7 +223,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s'
+                    transition:'0.3s',
+                    bgcolor:'#99ddff'
                   },
                 }}
               >
@@ -355,7 +357,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s'
+                    transition:'0.3s',   
+                    bgcolor:'#99ddff'
                   },
                 }}
               >
@@ -443,7 +446,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s'
+                    transition:'0.3s',
+                    bgcolor:'#99ddff'
                   },
                 }}
               >
@@ -590,6 +594,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
+                    transition:'0.3s',
+                    bgcolor:'#99ddff'
                   },
                 }}
               >

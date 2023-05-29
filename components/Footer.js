@@ -63,7 +63,7 @@ function Footer() {
                   borderRadius:'10px',
                   transition:'1s',
                   "&:hover":{
-                    boxShadow: "1px 1px 10px #b434eb",
+                    boxShadow: "1px 1px 10px #4dc3ff",
                     color: "#eb8c34",
                     transition:'0.3s'
                   }
