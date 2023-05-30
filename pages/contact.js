@@ -209,7 +209,6 @@ function Contact() {
             //   backgroundImage:"linear-gradient(to bottom right, #4d94ff, #66ccff)",
               color: "#6699ff",
               borderRadius: "20px",
-              marginBottom:'20px',
             }}
           >
            <Typography
@@ -225,7 +224,7 @@ function Contact() {
               },
               fontWeight: "bold",
               textAlign: "center",
-              padding: "20px",
+              padding: "20px 0 0 20px",
               color: "#0d0d0d",
             }}
           >
@@ -233,11 +232,11 @@ function Contact() {
           </Typography>
           {validator && (<Typography sx={{color:'red',margin:'0 10px'}}>* All Fields are mandatory</Typography>)}
           <Box
-            gap={2}
+            gap={1}
             sx={{
               display: "flex",
               flexDirection: "column",
-              padding: "30px",
+              padding: "0 30px 30px 30px",
               color: "#6699ff",
             }}
           >
