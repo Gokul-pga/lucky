@@ -34,21 +34,7 @@ function Contact() {
       setValidator(true)
       
     }
-     fetch("http://localhost:5000/register", {
-      method:"POST",
-      crossDomain:true,
-      headers:{
-        "Content-Type":"application/json",
-        Accept:"application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message,
-      }),
-    }).then((res) => res.json()).then((data) => {console.log(data,"userRegister");
-  });
+     
   }
 
   return (

@@ -53,7 +53,7 @@ function Modalpage({ open, setOpen }) {
       setValidator(true)
       
     }
-     fetch("http://localhost:5000/register", {
+     fetch("http://localhost:8000/user", {
       method:"POST",
       crossDomain:true,
       headers:{
