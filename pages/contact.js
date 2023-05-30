@@ -146,7 +146,7 @@ function Contact() {
             <Stack gap={3} sx={{ flexDirection: "column" }}>
               <Typography
                 className="animate__animated animate__zoomIn"
-                sx={{ color: "black", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace',width:'100%', bgcolor:'red' }}
+                sx={{ color: "black", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace',width:'100%' }}
               >
                 SOCIAL INFO
               </Typography>
