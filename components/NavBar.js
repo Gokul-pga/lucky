@@ -26,8 +26,8 @@ function NavBar() {
       to: "/work",
     },
     {
-      title: "Service",
-      to: "/service",
+      title: "Blog",
+      to: "/blog",
     },
     {
       title: "Contact",
@@ -68,7 +68,7 @@ function NavBar() {
           }}
         >
           {/* <Image src={logo} alt="image" height="60" width="200" /> */}
-          <Typography fontSize='30px' color='#fff'>LuckyCharm</Typography>
+          <Typography fontSize='30px' color='#fff' fontFamily='revert-layer'>LuckyCharm</Typography>
         </Box>
 
         <Box sx={{
@@ -94,6 +94,8 @@ function NavBar() {
             padding:'10px 8px',
             // backgroundColor:'palegreen',
             width:'100%',
+            textAlign:"center",
+            justifyContent:'center',
             fontWeight: "600",
                   cursor: "pointer",
                   fontSize: "15px",
@@ -101,6 +103,7 @@ function NavBar() {
                   transition:'0.3s',
                   "&:hover": {
                     color: "#eb8c34",
+                    scale:"1.3"
                   },
                 }}
                 onClick={()=>{router.push(item.to)}}

@@ -61,9 +61,10 @@ function Homepg() {
                   },
                   // bgcolor: "palegreen",
                   fontWeight: "bold",
+                  fontFamily:'revert-layer'
                 }}
               >
-                <span style={{ color: "#eb8c34" }}> Welcome To</span> LuckyCharm Technologies
+                <span style={{ color: "#eb8c34", fontFamily:'revert-layer', }}> Welcome To</span> LuckyCharm Technologies
               </Typography>
             </Box>
             <Box>
@@ -77,6 +78,7 @@ function Homepg() {
                     xs: "16px",
                   },
                   lineHeight: "2em",
+                  fontFamily:'revert-layer'
                 }}
               >
                 Let's Work With together

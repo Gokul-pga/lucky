@@ -18,8 +18,8 @@ function Footer() {
       to: "/work",
     },
     {
-      title: "Service",
-      to: "/service",
+      title: "Blog",
+      to: "/blog",
     },
     {
       title: "Contact",

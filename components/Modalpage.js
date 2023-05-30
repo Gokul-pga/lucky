@@ -77,11 +77,10 @@ function Modalpage({ open, setOpen }) {
         sx={{
           display: "flex",
           flexDirection:'row',
-          backgroundColor: "#ebe4e491",
+          backgroundColor: "#3b3b3b9c",
           alignItems: "center",
           justifyContent: "center",
           width:'100%',
-          backgroundColor:"#ddd4d470"
         }}
       >
         <Stack flex={1} sx={style}>
@@ -89,7 +88,13 @@ function Modalpage({ open, setOpen }) {
             sx={{
               display: "flex",
               flexDirection: "row",
-              fontSize: "30px",
+              fontSize: {
+                xl: "30px",
+                lg: "30px",
+                md: "18px",
+                sm: "18px",
+                xs: "18px",
+              },
               fontWeight: "bold",
               textAlign: "center",
               padding: "20px",

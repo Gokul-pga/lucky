@@ -60,8 +60,7 @@ function Work() {
                 src={require("../assests/webdev.gif")}
                 alt="Web Developement"
                 layout="responsive"
-                width="700"
-                height="500"
+                
               />
             </Box>
             <Box
@@ -128,15 +127,14 @@ function Work() {
                     xl: "20%",
                     lg: "20%",
                     md: "20%",
-                    sm: "30%",
-                    xs: "30%",
-                  },
+                    sm: "20%",
+                    xs: "40%",
+                  }, 
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "black",
                   color: "#fff",
                   textAlign: "center",
-                  transition:'0.3s',
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
@@ -218,27 +216,26 @@ function Work() {
                 It's based on React, Facebook's JavaScript library for building user interfaces, but instead of targeting the browser, it targets mobile platforms.
               </Typography>
               <Button
-                sx={{
-                  width: {
-                    xl: "20%",
-                    lg: "20%",
-                    md: "20%",
-                    sm: "30%",
-                    xs: "30%",
-                  },
-                  padding: "5px 8px",
-                  borderRadius: "10px",
-                  backgroundColor: "black",
-                  color: "#fff",
-                  textAlign: "center",
+               sx={{
+                width: {
+                  xl: "20%",
+                  lg: "20%",
+                  md: "20%",
+                  sm: "20%",
+                  xs: "40%",
+                }, 
+                padding: "5px 8px",
+                borderRadius: "10px",
+                backgroundColor: "black",
+                color: "#fff",
+                textAlign: "center",
+                "&:hover": {
+                  color: "black",
+                  fontWeight: "bold",
                   transition:'0.3s',
-                  "&:hover": {
-                    color: "black",
-                    fontWeight: "bold",
-                    transition:'0.3s',
-                    bgcolor:'#99ddff'
-                  },
-                }}
+                  bgcolor:'#99ddff'
+                },
+              }}
               >
                 Learn more!
               </Button>
@@ -358,27 +355,26 @@ function Work() {
                 While embedded systems are computing systems, they can range from having no user interface (UI) -- for example, on devices designed to perform a single task -- to complex graphical user interfaces (GUIs), such as in mobile devices. User interfaces can include buttons, LEDs (light-emitting diodes) and touchscreen sensing. Some systems use remote user interfaces as well.
               </Typography>
               <Button
-                sx={{
-                  width: {
-                    xl: "20%",
-                    lg: "20%",
-                    md: "20%",
-                    sm: "30%",
-                    xs: "30%",
-                  },
-                  padding: "5px 8px",
-                  borderRadius: "10px",
-                  backgroundColor: "black",
-                  color: "#fff",
-                  textAlign: "center",
+               sx={{
+                width: {
+                  xl: "20%",
+                  lg: "20%",
+                  md: "20%",
+                  sm: "20%",
+                  xs: "40%",
+                }, 
+                padding: "5px 8px",
+                borderRadius: "10px",
+                backgroundColor: "black",
+                color: "#fff",
+                textAlign: "center",
+                "&:hover": {
+                  color: "black",
+                  fontWeight: "bold",
                   transition:'0.3s',
-                  "&:hover": {
-                    color: "black",
-                    fontWeight: "bold",
-                    transition:'0.3s',   
-                    bgcolor:'#99ddff'
-                  },
-                }}
+                  bgcolor:'#99ddff'
+                },
+              }}
               >
                 Learn more!
               </Button>
@@ -453,20 +449,19 @@ function Work() {
                Most automation systems are derived from manual processes such as drilling, cutting, welding, and so on. These systems use robotic arms to manipulate the movement of the tool that performs the original function. Other applications, particularly in the field of process control, use automation to monitor and control process parameters. 
               </Typography>
               <Button
-                sx={{
+                 sx={{
                   width: {
                     xl: "20%",
                     lg: "20%",
                     md: "20%",
-                    sm: "30%",
-                    xs: "30%",
-                  },
+                    sm: "20%",
+                    xs: "40%",
+                  }, 
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "black",
                   color: "#fff",
                   textAlign: "center",
-                  transition:'0.3s',
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
@@ -606,8 +601,8 @@ function Work() {
                   width: {
                     xl: "20%",
                     lg: "20%",
-                    md: "40%",
-                    sm: "40%",
+                    md: "20%",
+                    sm: "20%",
                     xs: "40%",
                   }, 
                   padding: "5px 8px",
