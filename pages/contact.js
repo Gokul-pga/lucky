@@ -146,13 +146,13 @@ function Contact() {
             <Stack gap={3} sx={{ flexDirection: "column" }}>
               <Typography
                 className="animate__animated animate__zoomIn"
-                sx={{ color: "black", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace' }}
+                sx={{ color: "black", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace',width:'100%', bgcolor:'red' }}
               >
                 SOCIAL INFO
               </Typography>
               <Stack
                 gap={4}
-                sx={{ flexDirection: "row",width:{xl:'300px',lg:'300px',md:'550px',sm:'550px',xs:'550px'},justifyContent:'space-around' }}
+                sx={{ flexDirection: "row",width:{xl:'300px',lg:'300px',md:'350px',sm:'350px',xs:'350px'},justifyContent:'space-around' }}
                 className="animate__animated animate__slideInLeft"
               >
                 <Box  sx={{display:'flex',
