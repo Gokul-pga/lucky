@@ -5,22 +5,24 @@ import { useRouter } from "next/router";
 import Coursecard from "@/homepgcomponent/Coursecard";
 import Modalpage from "../components/Modalpage";
 import { useState } from "react";
+import Image from "next/image";
 
 function Homepg() {
   const [open, setOpen] = useState(false)
   const router = useRouter();
   return (
     <>
-      <Layout>
-        <Box sx={{ width: "100%", margin: "10px 0" }}>
+      <Layout >
+        <Box   sx={{ width: "100%",height:'100%', padding: "10px 0"}}>
+          
           <Stack
             flex={1}
             sx={{
               flexDirection: "column",
               width: "80%",
               padding: "40px 20px",
-              margin: "10px 0 0 50px",
               boxShadow: "10px 10px 5px #cccccc",
+              
             }}
           >
             {/* <Typography
@@ -78,7 +80,8 @@ function Homepg() {
                     xs: "16px",
                   },
                   lineHeight: "2em",
-                  fontFamily:'revert-layer'
+                  fontFamily:'revert-layer',
+                  fontWeight:'bold'
                 }}
               >
                 Let's Work With together
@@ -97,8 +100,8 @@ function Homepg() {
                   },fontWeight:'bold',
                   borderRadius: "2px",  
                   transition:'0.5s',
-                  backgroundColor: "black",
-                  color: "#eb8c34",
+                  backgroundColor: "#e6e6e6",
+                  color: "black",
                   "&:hover": {
                   borderRadius: "10px",
                   color: "#fff",

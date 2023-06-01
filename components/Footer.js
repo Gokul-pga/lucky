@@ -4,28 +4,28 @@ import React from "react";
 
 function Footer() {
   const router = useRouter();
-  const Nav = [
-    {
-      title: "Home",
-      to: "/",
-    },
-    {
-      title: "About",
-      to: "/about",
-    },
-    {
-      title: "Work",
-      to: "/work",
-    },
-    {
-      title: "Blog",
-      to: "/blog",
-    },
-    {
-      title: "Contact",
-      to: "/contact",
-    },
-  ];
+  // const Nav = [
+  //   {
+  //     title: "Home",
+  //     to: "/",
+  //   },
+  //   {
+  //     title: "About",
+  //     to: "/about",
+  //   },
+  //   {
+  //     title: "Work",
+  //     to: "/work",
+  //   },
+  //   {
+  //     title: "Blog",
+  //     to: "/blog",
+  //   },
+  //   {
+  //     title: "Contact",
+  //     to: "/contact",
+  //   },
+  // ];
 
   return (
     <>
@@ -39,7 +39,7 @@ function Footer() {
       >
         {/* ---------------- Footer Navigation Start------------------- */}
 
-        <Stack
+        {/* <Stack
           direction="row"
           flex={1}
           sx={{
@@ -74,7 +74,7 @@ function Footer() {
               </Typography>
             );
           })}
-        </Stack>
+        </Stack> */}
         {/* ---------------- Footer Navigation End------------------- */}
 
         {/*  -------------------- Footer Description Start ---------------------*/}

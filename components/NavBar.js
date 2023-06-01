@@ -39,16 +39,14 @@ function NavBar() {
     <>
       <Stack 
         flex={1}
-        direction='row'
         sx={{
           flexDirection:{
             xl:"row",
             lg: "row",
-            md: "column",
+            md: "row",
             sm: "column",
             xs: "column"},
           width: "100%",
-          height:60,
           alignItems: "center",
           justifyContent: "space-around",
           backgroundImage: "linear-gradient(to right, #4dc3ff, #3333ff)"
@@ -60,10 +58,11 @@ function NavBar() {
             display:{
               xl:"block",
               lg: "block",
-              md: "none",
+              md: "block",
               sm: "none",
               xs: "none"},
             color: "#acafb0",
+            padding:'10px 0'
             // backgroundColor:'grey'
           }}
         >
@@ -75,11 +74,11 @@ function NavBar() {
           display:{
             xl:"block",
             lg: "block",
-            md: "none",
+            md: "block",
             sm: "none",
             xs: "none"},
             width: "40%",
-            height:40,
+            padding:'10px 0',
             backgroundColor:'palegoldenrodl',
         }}>
         <Stack
@@ -102,7 +101,7 @@ function NavBar() {
                   color: "#fff",                
                   transition:'0.3s',
                   "&:hover": {
-                    color: "#eb8c34",
+                    color: "#fff",
                     scale:"1.3"
                   },
                 }}

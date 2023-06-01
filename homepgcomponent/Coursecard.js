@@ -65,7 +65,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>                
             App Developement
               </Typography>
-              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify"}}>
+              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "center"}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -77,7 +77,7 @@ export default function Coursecard() {
                   borderRadius: "2px",  
                   transition:'0.5s',
                   backgroundColor: "black",
-                  color: "#eb8c34",
+                  color: "#fff",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",
@@ -119,7 +119,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>                
             Web Developement
               </Typography>
-              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify"}}>
+              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "center"}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -131,7 +131,7 @@ export default function Coursecard() {
                   borderRadius: "2px",  
                   transition:'0.5s',
                   backgroundColor: "black",
-                  color: "#eb8c34",
+                  color: "#fff",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",
@@ -170,7 +170,7 @@ export default function Coursecard() {
               <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>
                 Automation
               </Typography>
-              <Typography  sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify"}}>
+              <Typography  sx={{fontSize:'14px',color:"text.secondary",textAlign: "center"}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -182,7 +182,7 @@ export default function Coursecard() {
                   borderRadius: "2px",  
                   transition:'0.5s',
                   backgroundColor: "black",
-                  color: "#eb8c34",
+                  color: "#fff",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",
@@ -247,7 +247,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>                
             Embedded System
               </Typography>
-              <Typography variant="body2" color="text.secondary" textAlign= "justify" >
+              <Typography variant="body2" color="text.secondary" textAlign= "center" >
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -259,7 +259,7 @@ export default function Coursecard() {
                   borderRadius: "2px",  
                   transition:'0.5s',
                   backgroundColor: "black",
-                  color: "#eb8c34",
+                  color: "#fff",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",
@@ -301,7 +301,7 @@ export default function Coursecard() {
             <Typography  sx={{fontSize:'18px',fontWeight:'bold'}}>
              PLC Programming
               </Typography>
-              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "justify",}}>
+              <Typography sx={{fontSize:'14px',color:"text.secondary",textAlign: "center",}}>
                 Lizards are a widespread group of squamate reptiles, with over
                 6,000 species, ranging across all continents except Antarctica
               </Typography>
@@ -313,7 +313,7 @@ export default function Coursecard() {
                   borderRadius: "2px",  
                   transition:'0.5s',
                   backgroundColor: "black",
-                  color: "#eb8c34",
+                  color: "#fff",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",

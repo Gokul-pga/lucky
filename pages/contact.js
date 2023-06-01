@@ -34,7 +34,21 @@ function Contact() {
       setValidator(true)
       
     }
-     
+     fetch("http://localhost:8000/user", {
+      method:"POST",
+      crossDomain:true,
+      headers:{
+        "Content-Type":"application/json",
+        Accept:"application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        message,
+      }),
+    }).then((res) => res.json()).then((data) => {console.log(data,"userRegister");
+  });
   }
 
   return (
@@ -49,7 +63,7 @@ function Contact() {
             justifyContent:{xl:'space-around',lg:'space-around',sm:'space-around',md:'space-around',xs:'space-around'}
           }}
         >
-          <Box gap={3} sx={{ display: "flex", flexDirection: "column" }}>
+          <Box gap={3} sx={{ display: "flex", flexDirection: "column", padding:"10px 20px" }}>
             <Typography
               className="animate__animated animate__zoomIn"
               sx={{ color: "black", fontSize: "20px" , fontWeight:'bold',fontFamily:'monospace' }}
@@ -75,7 +89,7 @@ function Contact() {
                   }}
                 />
                 <Box sx={{ color: "#fff" }}>
-                  <Typography color="black" fontWeight="bold">
+                  <Typography color="black" fontWeight="bold" fontSize='16px'>
                     MAIL US
                   </Typography>
                   <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
@@ -97,7 +111,7 @@ function Contact() {
                   }}
                 />
                 <Box sx={{ color: "#fff" }}>
-                  <Typography color="#4d4d4d" fontWeight="bold">
+                  <Typography color="black" fontWeight="bold" fontSize='16px'>
                     CONTACT US
                   </Typography>
                   <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
@@ -118,7 +132,7 @@ function Contact() {
                   }}
                 />
                 <Box sx={{ color: "#fff" }}>
-                  <Typography color="#4d4d4d" fontWeight="bold">
+                  <Typography color="black" fontWeight="bold" fontSize='16px' >
                     LOCATION
                   </Typography>
                   <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
@@ -129,7 +143,7 @@ function Contact() {
             {/* end stack 3 */}
 
             {/* Social Info Start */}
-            <Stack gap={3} sx={{ flexDirection: "column" }}>
+            <Stack gap={2} sx={{ flexDirection: "column" }}>
               <Typography
                 className="animate__animated animate__zoomIn"
                 sx={{ color: "black", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace',width:'100%' }}
@@ -188,13 +202,14 @@ function Contact() {
           </Box>
 
           <Stack
-          className="animate__animated animate__bounceInRight"
+          className="animate__animated animate__zoomIn"
             sx={{
               width:{xl:"600px",lg:"600px",md:'100%',sm:'100%',xs:'100%'},
-              bgcolor:'#b2ab99',
+              bgcolor:'#e6e6e6',
             //   backgroundImage:"linear-gradient(to bottom right, #4d94ff, #66ccff)",
               color: "#6699ff",
               borderRadius: "20px",
+              justifyContent:'space-around'
             }}
           >
            <Typography
@@ -214,11 +229,11 @@ function Contact() {
               color: "#0d0d0d",
             }}
           >
-            Let's Start With <span style={{ color: "#fff" }}>Together.</span>
+            Let's Start With <span style={{ color: "#4dc3ff" }}>Together.</span>
           </Typography>
           {validator && (<Typography sx={{color:'red',margin:'0 10px'}}>* All Fields are mandatory</Typography>)}
           <Box
-            gap={1}
+            gap={3}
             sx={{
               display: "flex",
               flexDirection: "column",
@@ -270,7 +285,7 @@ function Contact() {
                 backgroundColor: "#fff",
                 padding: "5px 8px",
                 color: "black",
-                borderRadius: "0px",
+                borderRadius: "5px",
                 textAlign: "center",
                 transition:'0.3s',
                 "&:hover":{
