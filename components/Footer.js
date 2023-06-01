@@ -86,7 +86,7 @@ function Footer() {
               // backgroundColor:'yellowgreen'
             }}
           >
-            <Typography fontSize="30px">LuckyCharm</Typography>
+            <Typography color='#fff' fontSize="30px" letterSpacing='0.2em' fontWeight='bold' fontFamily='revert-layer'>LuckyCharm</Typography>
           </Box>
 
           <Stack
@@ -107,11 +107,14 @@ function Footer() {
               },
             }}
           >
-            <Box>
+            <Box sx={{
+              display:'flex',
+              flexDirection:'column',
+            }}>
               <Box
                 sx={{
                   fontSize: "25px",
-                  color: "#b5bbbd",
+                  color: "#fff",
                   lineHeight: "3em",
                 }}
               >
@@ -140,11 +143,47 @@ function Footer() {
               </Box>
             </Box>
 
+            <Box sx={{
+              display:'flex',
+              flexDirection:'column'
+            }}>
+              <Box
+                sx={{
+                  fontSize: "25px",
+                  color: "#fff",
+                  lineHeight: "3em",
+                }}
+              >
+                Project Category
+              </Box>
+              <Box
+                sx={{
+                  color: "#b5bbbd",
+                }}
+              >
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                  Mecanical
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                  Mechatronics
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                  Automobile
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                  Robotics
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                  Production
+                </Typography>
+              </Box>
+            </Box>
+
             <Box>
               <Box
                 sx={{
                   fontSize: "25px",
-                  color: "#b5bbbd",
+                  color: "#fff",
                   lineHeight: "3em",
                 }}
               >

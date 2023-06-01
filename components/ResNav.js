@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useRouter } from "next/router";
+import  "animate.css";
+
 
 
 function NavBar() {
@@ -48,7 +50,7 @@ const [open, setOpen] = useState(false)
 
     }}>
 
-    <Stack sx={{
+    <Stack  sx={{
                 display:'flex',
                 flexDirection:'row',
                 justifyContent:'space-between',

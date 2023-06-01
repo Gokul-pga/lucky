@@ -66,18 +66,18 @@ function Homepg() {
                   fontFamily:'revert-layer'
                 }}
               >
-                <span style={{ color: "#eb8c34", fontFamily:'revert-layer', }}> Welcome To</span> LuckyCharm Technologies
+                 Welcome To <span style={{ color: "#1ab2ff", fontFamily:'revert-layer', }}>LuckyCharm Technologies</span> 
               </Typography>
             </Box>
             <Box>
               <Typography
                 sx={{
                   fontSize: {
-                    xl: "20pxpx",
-                    lg: "20pxpx",
-                    md: "16px",
-                    sm: "16px",
-                    xs: "16px",
+                    xl: "25pxpx",
+                    lg: "25pxpx",
+                    md: "20px",
+                    sm: "20px",
+                    xs: "20px",
                   },
                   lineHeight: "2em",
                   fontFamily:'revert-layer',

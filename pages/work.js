@@ -43,7 +43,7 @@ function Work() {
             }}
           >
             <Box
-              className="animate__animated animate__slideInLeft"
+              className="animate__animated animate__zoomInLeft"
               sx={{
                 width: {
                   xl: "60%",
@@ -64,7 +64,7 @@ function Work() {
               />
             </Box>
             <Box
-              className="animate__animated animate__slideInRight"
+              className="animate__animated animate__zoomInRight"
               sx={{
                 flex: 2,
                 display: "flex",
@@ -77,9 +77,10 @@ function Work() {
                   xs: "95%",
                 },
                 textAlign: "left",
-                padding: "10px 20px",
+                padding: "10px 10px",
                 justifyContent: "space-evenly",
                 gap: 2,
+                //bgcolor:'red'
               }}
             >
               <Typography
@@ -118,7 +119,7 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-                Having working with websites and applications developement by using HTML, CSS, Javascript, React JS and Next JS for backend technolog we have using MongoDB and MySQL for database to store the datas.
+                Having working with websites and applications developement by using HTML, CSS, Javascript, React JS and Next JS for Front-end and for backend technolog we have using MongoDB and MySQL for database to store the datas.
               </Typography>
               
               <Button
@@ -172,7 +173,7 @@ function Work() {
             }}
           >
             <Box
-              className="animate__animated animate__slideInLeft"
+              className="animate__animated animate__zoomInLeft"
               sx={{
                 flex: 2,
                 display: "flex",
@@ -185,7 +186,7 @@ function Work() {
                   xs: "95%",
                 },
                 textAlign: "left",
-                padding: "10px 20px",
+                padding: "10px 10px",
                 justifyContent: "space-evenly",
                 gap: 2,
               }}
@@ -242,7 +243,7 @@ function Work() {
             </Box>
 
             <Box
-              className="animate__animated animate__slideInRight"
+              className="animate__animated animate__zoomInRight"
               sx={{
                 width: {
                   flex: 1,
@@ -288,7 +289,7 @@ function Work() {
             }}
           >
             <Box
-              className="animate__animated animate__slideInLeft"
+              className="animate__animated animate__zoomInLeft"
               sx={{
                 width: {
                   flex: 1,
@@ -310,7 +311,7 @@ function Work() {
               />
             </Box>
             <Box
-              className="animate__animated animate__slideInRight"
+              className="animate__animated animate__zoomInRight"
               sx={{
                 flex: 2,
                 display: "flex",
@@ -323,7 +324,7 @@ function Work() {
                   xs: "95%",
                 },
                 textAlign: "left",
-                padding: "10px 20px",
+                padding: "10px 10px",
                 justifyContent: "space-evenly",
                 gap: 2,
               }}
@@ -405,7 +406,7 @@ function Work() {
             }}
           >
             <Box
-              className="animate__animated animate__slideInLeft"
+              className="animate__animated animate__zoomInLeft"
               sx={{
                 flex: 2,
                 display: "flex",
@@ -418,7 +419,7 @@ function Work() {
                   xs: "95%",
                 },
                 textAlign: "left",
-                padding: "10px 20px",
+                padding: "10px 10px",
                 justifyContent: "space-evenly",
                 gap: 2,
               }}
@@ -475,7 +476,7 @@ function Work() {
             </Box>
 
             <Box
-              className="animate__animated animate__slideInRight"
+              className="animate__animated animate__zoomInRight"
               sx={{
                 width: {
                   flex: 1,
@@ -521,7 +522,7 @@ function Work() {
             }}
           >
             <Box
-              className="animate__animated animate__slideInLeft"
+              className="animate__animated animate__zoomInLeft"
               sx={{
                 width: {
                   xl: "60%",
@@ -543,7 +544,7 @@ function Work() {
               />
             </Box>
             <Box
-              className="animate__animated animate__slideInRight"
+              className="animate__animated animate__zoomInRight"
               sx={{
                 flex: 2,
                 display: "flex",
@@ -556,7 +557,7 @@ function Work() {
                   xs: "95%",
                 },
                 textAlign: "left",
-                padding: "10px 20px",
+                padding: "10px 10px",
                 justifyContent: "space-evenly",
                 gap: 2,
               }}

@@ -7,23 +7,27 @@ import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
  import { BsWhatsapp } from 'react-icons/bs';
  import { CiLinkedin } from 'react-icons/ci';
  import { FiInstagram } from 'react-icons/fi';
+ import  "animate.css";
+
 
 function Contact() {
     
   const [inputdata, setInputdata] = useState({
     name:'',
     email:'',
+    phone:'',
     subject:'',
     message:''
   })
-  const {name,email,subject,message} = inputdata;
+  const {name,email,phone,subject,message} = inputdata;
   const [validator, setValidator] = useState(false)
 
   const handlesubmit = () => {
-    if (name !== '' && email !== '' && subject !== '' && message !== '') {
+    if (name !== '' && email !== '' && phone !== '' && subject !== '' && message !== '') {
       setInputdata({
         name:'',
     email:'',
+    phone:'',
     subject:'',
     message:''
       }) 
@@ -44,6 +48,7 @@ function Contact() {
       body: JSON.stringify({
         name,
         email,
+        phone,
         subject,
         message,
       }),
@@ -248,13 +253,19 @@ function Contact() {
               value={name}
               onChange={(e) => {setInputdata({...inputdata,name:e.target.value})}}
               />
-
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Email"
               value={email}
               onChange={(e) =>{setInputdata({...inputdata,email:e.target.value})}}
+            />
+            <TextField
+              id="outlined-controlled"
+              variant="standard"
+              label="Mobile Number"
+              value={phone}
+              onChange={(e) =>{setInputdata({...inputdata,phone:e.target.value})}}
             />
             <TextField
               id="outlined-controlled"
@@ -282,9 +293,9 @@ function Contact() {
             <Button
               sx={{
                 fontWeight:'bold',
-                backgroundColor: "#fff",
+                backgroundColor: "#4dc3ff",
                 padding: "5px 8px",
-                color: "black",
+                color: "#fff",
                 borderRadius: "5px",
                 textAlign: "center",
                 transition:'0.3s',
