@@ -86,7 +86,7 @@ const [open, setOpen] = useState(false)
         <AiOutlineMenu/>
         </Box>
     </Stack>
-    { open && <Box  className="animate__animated animate__fadeInDown" on  sx={{
+    { open && <Box  className="animate__animated animate__fadeInDown"  sx={{
                 display:'flex',
                 flexDirection:'column',
                 color:'#fff',

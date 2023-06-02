@@ -38,7 +38,7 @@ function Contact() {
       setValidator(true)
       
     }
-     fetch("http://localhost:8000/user", {
+     fetch("http://localhost:4000/user", {
       method:"POST",
       crossDomain:true,
       headers:{

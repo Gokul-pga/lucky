@@ -126,19 +126,19 @@ function Footer() {
                 }}
               >
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Web Developement
-                </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Mobile App Developement
-                </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Embedded System
-                </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
                   Automation
                 </Typography>
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  PLC Programming
+                Embedded System
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                   Mobile App Developement
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                PLC Programming
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                Web Developement 
                 </Typography>
               </Box>
             </Box>
@@ -162,19 +162,19 @@ function Footer() {
                 }}
               >
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Mecanical
-                </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Mechatronics
-                </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
                   Automobile
                 </Typography>
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                  Robotics
+                Mechanical
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                Mechatronics
                 </Typography>
                 <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
                   Production
+                </Typography>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                Robotics
                 </Typography>
               </Box>
             </Box>

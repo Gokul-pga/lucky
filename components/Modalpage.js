@@ -30,19 +30,21 @@ function Modalpage({ open, setOpen }) {
   const [inputdata, setInputdata] = useState({
     name:'',
     email:'',
+    phone:'',
     subject:'',
     message:''
   })
-  const {name,email,subject,message} = inputdata;
+  const {name,email,phone,subject,message} = inputdata;
   const [validator, setValidator] = useState(false)
 
   const handleClose = () => setOpen(false);
 
   const handlesubmit = () => {
-    if (name !== '' && email !== '' && subject !== '' && message !== '') {
+    if (name !== '' && email !== '' && phone !== '' && subject !== '' && message !== '') {
       setInputdata({
         name:'',
     email:'',
+    phone:'',
     subject:'',
     message:''
       }) 
@@ -53,7 +55,7 @@ function Modalpage({ open, setOpen }) {
       setValidator(true)
       
     }
-     fetch("http://localhost:8000/user", {
+     fetch("http://localhost:5000/post", {
       method:"POST",
       crossDomain:true,
       headers:{
@@ -63,6 +65,7 @@ function Modalpage({ open, setOpen }) {
       body: JSON.stringify({
         name,
         email,
+        phone,
         subject,
         message,
       }),
@@ -127,6 +130,13 @@ function Modalpage({ open, setOpen }) {
               label="Email"
               value={email}
               onChange={(e) =>{setInputdata({...inputdata,email:e.target.value})}}
+            />
+             <TextField
+              id="outlined-controlled"
+              variant="standard"
+              label="Mobile Number"
+              value={phone}
+              onChange={(e) =>{setInputdata({...inputdata,phone:e.target.value})}}
             />
             <TextField
               id="outlined-controlled"
