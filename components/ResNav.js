@@ -1,9 +1,11 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
-import React, { useState } from "react";
+import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useRouter } from "next/router";
 import  "animate.css";
+import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
+
 
 
 
@@ -11,6 +13,28 @@ function NavBar() {
 
   const router =useRouter()
 const [open, setOpen] = useState(false)
+
+const [scroll, setScroll] = useState(false)
+  
+
+  useEffect(() => {
+    window.addEventListener("scroll" , () =>{
+      if (window.scrollY > 80) {
+        setScroll(true)
+      }else{
+        setScroll(false)
+      }
+    })
+  }, [1])
+
+  const scrollup = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
+  
+
 
 
   const Nav = [
@@ -121,6 +145,22 @@ const [open, setOpen] = useState(false)
             })}
             </Box> }
     </Stack>
+    { scroll && <IconButton sx={{
+        position: "fixed",
+        bottom: 30,
+        right: 30,
+        color:'#000',
+        transition:'0.5s',
+        bgcolor:'#a6a6a6',
+        "&:hover":{
+          bgcolor:'#595959',
+          color:'#fff'
+        }
+}}
+        onClick={scrollup}
+>
+     <  VerticalAlignTopIcon  />
+      </IconButton> }
     </>
   );
 }

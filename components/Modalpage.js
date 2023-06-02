@@ -10,18 +10,16 @@ import React, { useState } from "react";
 import "animate.css"
 
 const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  backgroundColor:'#e6e6e6',
+  
   width: {
-    xl: "40%",
+    xl: "500px",
     lg: "40%",
     md: "60%",
     sm: "60%",
     xs: "60%",
-  },  boxShadow: 24,
+  },  
+  backgroundColor:'#e6e6e6',
+  boxShadow: 24,
   color: "Black",
   p: 2,
 };
@@ -75,7 +73,7 @@ function Modalpage({ open, setOpen }) {
 
   return (
     <>
-      <Modal className="animate__animated animate__zoomIn"
+      <Modal 
         open={open}
         sx={{
           display: "flex",
@@ -86,7 +84,20 @@ function Modalpage({ open, setOpen }) {
           width:'100%',
         }}
       >
-        <Stack flex={1} sx={style}>
+        <Stack className="animate__animated animate__zoomIn" direction='column'  sx={{
+           width: {
+            xl: "50%",
+            lg: "40%",
+            md: "60%",
+            sm: "60%",
+            xs: "60%",
+          },  
+          backgroundColor:'#e6e6e6',
+          boxShadow: 24,
+          color: "Black",
+          p: 2,
+          borderRadius:'10px'
+        }}>
           <Typography
             sx={{
               display: "flex",
@@ -165,7 +176,7 @@ function Modalpage({ open, setOpen }) {
                 backgroundColor: "black",
                 padding: "5px 8px",
                 color: "#fff",
-                borderRadius: "0px",
+                borderRadius: "4px",
                 textAlign: "center",
                 transition:'0.3s',
                 "&:hover":{
@@ -183,7 +194,7 @@ function Modalpage({ open, setOpen }) {
               sx={{
                 backgroundColor: "black",
                 padding: "5px 20px",
-                borderRadius: "0px",
+                borderRadius: "4px",
                 color: "#fff",
                 transition:'0.3s',
                 textAlign: "center",

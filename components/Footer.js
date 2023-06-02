@@ -1,9 +1,35 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect} from "react";
+import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
+import { useState } from "react";
+
+
 
 function Footer() {
   const router = useRouter();
+
+ const [scroll, setScroll] = useState(false)
+  
+
+  useEffect(() => {
+    window.addEventListener("scroll" , () =>{
+      if (window.scrollY > 80) {
+        setScroll(true)
+      }else{
+        setScroll(false)
+      }
+    })
+  }, [1])
+
+  const scrollup = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
+  
+  
   // const Nav = [
   //   {
   //     title: "Home",
@@ -35,6 +61,7 @@ function Footer() {
         sx={{
           backgroundColor: "#161717",
           width: "100%",
+          position:'absolute'
         }}
       >
         {/* ---------------- Footer Navigation Start------------------- */}
@@ -205,6 +232,22 @@ function Footer() {
       </Stack>
 
       {/*  -------------------- Footer Box End ---------------------*/}
+     { scroll && <IconButton sx={{
+        position: "fixed",
+        bottom: 20,
+        right: 30,
+        color:'#000',
+        transition:'0.5s',
+        bgcolor:'#fff',
+        "&:hover":{
+          bgcolor:'#595959',
+          color:'#fff'
+        }
+}}
+        onClick={scrollup}
+>
+     <  VerticalAlignTopIcon fontSize="large" />
+      </IconButton> }
     </>
   );
 }

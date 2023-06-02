@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 
 
 
-
 function NavBar() {
   
   const router = useRouter()
@@ -138,6 +137,7 @@ function NavBar() {
           </Typography>
         </Box> */}
       </Stack>
+      
     </>
   );
 }

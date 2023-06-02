@@ -11,9 +11,12 @@
     z-index: -1000;
 } */
 main{
-    background-color: #3b3b3b9c;
+    background-color: #0505059c;
 }
 :root{
     --heading-font: 30px;
     --paragrap-font: 16px;
+}
+body{
+    background-color: rgba(255, 253, 253, 0.425);
 }

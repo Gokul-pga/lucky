@@ -22,7 +22,7 @@ function Homepg() {
               width: "80%",
               padding: "40px 20px",
               boxShadow: "10px 10px 5px #cccccc",
-              
+              mt:'10px'
             }}
           >
             {/* <Typography
@@ -100,7 +100,7 @@ function Homepg() {
                   },fontWeight:'bold',
                   borderRadius: "2px",  
                   transition:'0.5s',
-                  backgroundColor: "#e6e6e6",
+                  backgroundColor: "#dfd9d9",
                   color: "black",
                   "&:hover": {
                   borderRadius: "10px",

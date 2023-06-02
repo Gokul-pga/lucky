@@ -76,8 +76,8 @@ export default function Coursecard() {
                   fontWeight:'bold',
                   borderRadius: "2px",  
                   transition:'0.5s',
-                  backgroundColor: "black",
-                  color: "#fff",
+                  backgroundColor: "#dfd9d9",
+                  color: "#000",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",
@@ -126,19 +126,19 @@ export default function Coursecard() {
             </CardContent>
             <Box>
               <Button
-                sx={{
-                  fontWeight:'bold',
-                  borderRadius: "2px",  
-                  transition:'0.5s',
-                  backgroundColor: "black",
-                  color: "#fff",
-                  padding: "5px 10px",
-                  "&:hover": {
-                  borderRadius: "10px",
-                  color: "#fff",
-                    backgroundColor: "#4dc3ff",
-                  },
-                }}
+               sx={{
+                fontWeight:'bold',
+                borderRadius: "2px",  
+                transition:'0.5s',
+                backgroundColor: "#dfd9d9",
+                color: "#000",
+                padding: "5px 10px",
+                "&:hover": {
+                borderRadius: "10px",
+                color: "#fff",
+                  backgroundColor: "#4dc3ff",
+                },
+              }}
               >
                 Learn More
               </Button>
@@ -177,19 +177,19 @@ export default function Coursecard() {
             </CardContent>
             <Box>
               <Button
-                sx={{
-                  fontWeight:'bold',
-                  borderRadius: "2px",  
-                  transition:'0.5s',
-                  backgroundColor: "black",
-                  color: "#fff",
-                  padding: "5px 10px",
-                  "&:hover": {
-                  borderRadius: "10px",
-                  color: "#fff",
-                    backgroundColor: "#4dc3ff",
-                  },
-                }}
+               sx={{
+                fontWeight:'bold',
+                borderRadius: "2px",  
+                transition:'0.5s',
+                backgroundColor: "#dfd9d9",
+                color: "#000",
+                padding: "5px 10px",
+                "&:hover": {
+                borderRadius: "10px",
+                color: "#fff",
+                  backgroundColor: "#4dc3ff",
+                },
+              }}
               >
                 Learn More
               </Button>
@@ -258,8 +258,8 @@ export default function Coursecard() {
                   fontWeight:'bold',
                   borderRadius: "2px",  
                   transition:'0.5s',
-                  backgroundColor: "black",
-                  color: "#fff",
+                  backgroundColor: "#dfd9d9",
+                  color: "#000",
                   padding: "5px 10px",
                   "&:hover": {
                   borderRadius: "10px",
@@ -308,19 +308,19 @@ export default function Coursecard() {
             </CardContent>
             <Box>
               <Button
-                sx={{
-                  fontWeight:'bold',
-                  borderRadius: "2px",  
-                  transition:'0.5s',
-                  backgroundColor: "black",
-                  color: "#fff",
-                  padding: "5px 10px",
-                  "&:hover": {
-                  borderRadius: "10px",
-                  color: "#fff",
-                    backgroundColor: "#4dc3ff",
-                  },
-                }}
+               sx={{
+                fontWeight:'bold',
+                borderRadius: "2px",  
+                transition:'0.5s',
+                backgroundColor: "#dfd9d9",
+                color: "#000",
+                padding: "5px 10px",
+                "&:hover": {
+                borderRadius: "10px",
+                color: "#fff",
+                  backgroundColor: "#4dc3ff",
+                },
+              }}
               >
                 Learn More
               </Button>
