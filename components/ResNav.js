@@ -12,6 +12,7 @@ import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
 function NavBar() {
 
   const router =useRouter()
+  const location = router.pathname
 const [open, setOpen] = useState(false)
 
 const [scroll, setScroll] = useState(false)
@@ -121,7 +122,7 @@ const [scroll, setScroll] = useState(false)
                 zIndex:'1000',
                 bgcolor:'#333333',
                 borderRadius:'0 0 15px 15px',
-                padding: "8px 0 10px 0"
+                padding: "4px 0 0 0"
             }}>
                 {Nav.map((item, index) => {
               return (
@@ -136,8 +137,8 @@ const [scroll, setScroll] = useState(false)
                     md: "none",
                     sm: "block",
                     xs: "block"},
-                    color: "#fff",
-                   fontSize:'16px'
+                    color: location == item.to ?  "#99ddff" : "#fff",
+                   fontSize:'14px'
                   }}
                 >
                   {item.title}

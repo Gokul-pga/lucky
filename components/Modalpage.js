@@ -8,21 +8,8 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import "animate.css"
-
-const style = {
   
-  width: {
-    xl: "500px",
-    lg: "40%",
-    md: "60%",
-    sm: "60%",
-    xs: "60%",
-  },  
-  backgroundColor:'#e6e6e6',
-  boxShadow: 24,
-  color: "Black",
-  p: 2,
-};
+
 
 function Modalpage({ open, setOpen }) {
   const [inputdata, setInputdata] = useState({
@@ -87,10 +74,10 @@ function Modalpage({ open, setOpen }) {
         <Stack className="animate__animated animate__zoomIn" direction='column'  sx={{
            width: {
             xl: "50%",
-            lg: "40%",
-            md: "60%",
-            sm: "60%",
-            xs: "60%",
+            lg: "50%",
+            md: "80%",
+            sm: "80%",
+            xs: "80%",
           },  
           backgroundColor:'#e6e6e6',
           boxShadow: 24,
