@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 function NavBar() {
   
   const router = useRouter()
+  const location = router.pathname
 
 
   const Nav = [
@@ -48,7 +49,8 @@ function NavBar() {
           width: "100%",
           alignItems: "center",
           justifyContent: "space-around",
-          backgroundImage: "linear-gradient(to right, #4dc3ff, #3333ff)"
+          // backgroundImage: "linear-gradient(to right, #4dc3ff, #3333ff)"
+          bgcolor:'#00000079'
 
         }}
       >
@@ -66,7 +68,9 @@ function NavBar() {
           }}
         >
           {/* <Image src={logo} alt="image" height="60" width="200" /> */}
-          <Typography fontSize='30px' color='#fff' fontFamily='revert-layer'>LuckyCharm</Typography>
+          <Typography fontSize='30px' color='#fff' fontFamily='revert-layer' onClick= {() => {
+      router.push("/")
+    }}>LuckyCharm</Typography>
         </Box>
 
         <Box sx={{
@@ -94,14 +98,15 @@ function NavBar() {
             width:'100%',
             textAlign:"center",
             justifyContent:'center',
-            fontWeight: "600",
+            fontWeight: location == item.to ? "bold" : "100",
                   cursor: "pointer",
                   fontSize: "15px",
-                  color: "#fff",                
+                  color: location == item.to ?  "#99ddff" : "#fff",                
                   transition:'0.3s',
                   "&:hover": {
-                    color: "#fff",
-                    scale:"1.3"
+                    color: location == item.to ? "#99ddff" : "#fff",
+                    scale:"1.3",
+                    fontWeight: location == item.to ? "bold" : "100",
                   },
                 }}
                 onClick={()=>{router.push(item.to)}}

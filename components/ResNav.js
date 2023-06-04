@@ -71,7 +71,6 @@ const [scroll, setScroll] = useState(false)
             sm: "block",
             xs: "block"},
             width:'100%',
-
     }}>
 
     <Stack  sx={{
@@ -81,7 +80,9 @@ const [scroll, setScroll] = useState(false)
                 padding:'10px 15px 20px 15px',
                 bgcolor:'#333333',
                 zIndex:'1001',
-                position:'relative'
+                position:'relative',
+                position:'sticky'
+
                 }}
                 >
 

@@ -18,11 +18,19 @@ function Homepg() {
           <Stack
             flex={1}
             sx={{
-              flexDirection: "column",
+              flexDirection: {
+                xl: "row",
+                lg: "row",
+                md: "column",
+                sm: "column",
+                xs: "column",
+              },
               width: "80%",
               padding: "40px 20px",
-              boxShadow: "10px 10px 5px #cccccc",
-              mt:'10px'
+              // boxShadow: "10px 10px 5px #cccccc",
+              mt:'10px',
+              borderRadius:'10px',
+             
             }}
           >
             {/* <Typography
@@ -33,13 +41,7 @@ function Homepg() {
             <Box
               sx={{
                 display: "flex",
-                flexDirection: {
-                  xl: "row",
-                  lg: "row",
-                  md: "column",
-                  sm: "column",
-                  xs: "column",
-                },
+                flexDirection: "column",
                 width: "100%",
                 gap: {
                   xl: 2,
@@ -63,13 +65,13 @@ function Homepg() {
                   },
                   // bgcolor: "palegreen",
                   fontWeight: "bold",
-                  fontFamily:'revert-layer'
+                  fontFamily:'revert-layer',
+                  color:'#fff'
                 }}
               >
-                 Welcome To <span style={{ color: "#1ab2ff", fontFamily:'revert-layer', }}>LuckyCharm Technologies</span> 
+                 Welcome To <span style={{ color: "#99ddff", fontFamily:'revert-layer', }}>LuckyCharm Technologies</span> 
               </Typography>
-            </Box>
-            <Box>
+              <Box>
               <Typography
                 sx={{
                   fontSize: {
@@ -81,31 +83,34 @@ function Homepg() {
                   },
                   lineHeight: "2em",
                   fontFamily:'revert-layer',
-                  fontWeight:'bold'
+                  fontWeight:'bold',
+                  color:'#fff'
                 }}
               >
                 Let's Work With together
               </Typography>
             </Box>
+            </Box>
+           
             <Box>
               <Button
                 sx={{
-                  lineHeight: "2em",
                   padding: {
-                    xl: "5px 20px",
-                    lg: "5px 20px",
+                    xl: "5px 80px",
+                    lg: "5px 80px",
                     md: "3px 10px",
                     sm: "3px 10px",
                     xs: "3px 10px",
-                  },fontWeight:'bold',
-                  borderRadius: "2px",  
+                  },
+                  fontWeight:'bold',
+                  borderRadius: "5px",  
                   transition:'0.5s',
-                  backgroundColor: "#dfd9d9",
-                  color: "black",
+                  backgroundColor: "#00000079",
+                  color: "#fff",
                   "&:hover": {
                   borderRadius: "10px",
                   color: "#fff",
-                    backgroundColor: "#4dc3ff",
+                    backgroundColor: "#99ddff",
                   },
                 }}
                 onClick={() => {setOpen(true)}}

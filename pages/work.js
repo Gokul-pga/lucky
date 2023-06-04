@@ -20,6 +20,13 @@ function Work() {
               sm: 7,
               xs: 7,
             },
+            marginTop: {
+              xl: "0",
+              lg: "0",
+              md: "0",
+              sm: '80px',
+              xs: '80px',
+            },
           }}
         >
           {/* ------------------------------------- Web Developement start----------------------------------- */}
@@ -34,11 +41,11 @@ function Work() {
                 xs: "column",
               },
               padding: {
-                xl: "10px 20px",
-                lg: "10px 20px",
-                md: "10px 20px",
-                sm: "10px 20px",
-                xs: "10px 20px",
+                xl: "20px 20px",
+                lg: "20px 20px",
+                md: "20px 20px",
+                sm: "20px 20px",
+                xs: "20px 20px",
               },
             }}
           >
@@ -60,7 +67,7 @@ function Work() {
                 src={require("../assests/webdev.gif")}
                 alt="Web Developement"
                 layout="responsive"
-                
+                style={{borderRadius:'10px'}}
               />
             </Box>
             <Box
@@ -84,14 +91,14 @@ function Work() {
               }}
             >
               <Typography
-                sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
+                sx={{ fontSize: "30px", fontWeight: "bold", color: "#fff" }}
               >
                 Web Developement
               </Typography>
               <Typography
                 sx={{
                   fontSize: "20px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   fontWeight: "bold",
                 }}
@@ -101,7 +108,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }} 
@@ -114,7 +121,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -133,9 +140,10 @@ function Work() {
                   }, 
                   padding: "5px 8px",
                   borderRadius: "10px",
-                  backgroundColor: "black",
-                  color: "#fff",
+                  backgroundColor: "#fff",
+                  color: "#000",
                   textAlign: "center",
+                  fontWeight:'600',
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
@@ -163,13 +171,13 @@ function Work() {
                 xs: "column",
               },
               padding: {
-                xl: "10px 20px",
-                lg: "10px 20px",
-                md: "10px 20px",
-                sm: "10px 20px",
-                xs: "10px 20px",
+                xl: "20px 20px",
+                lg: "20px 20px",
+                md: "20px 20px",
+                sm: "20px 20px",
+                xs: "20px 20px",
               },
-              backgroundColor: "#e6e6e6",
+              backgroundColor: "#00000079",
             }}
           >
             <Box
@@ -192,14 +200,14 @@ function Work() {
               }}
             >
               <Typography
-                sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
+                sx={{ fontSize: "30px", fontWeight: "bold", color: "#fff" }}
               >
                 App Developement
               </Typography>
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -209,7 +217,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -227,9 +235,10 @@ function Work() {
                 }, 
                 padding: "5px 8px",
                 borderRadius: "10px",
-                backgroundColor: "black",
-                color: "#fff",
+                backgroundColor: "#fff",
+                color: "#000",
                 textAlign: "center",
+                fontWeight: "bold",
                 "&:hover": {
                   color: "black",
                   fontWeight: "bold",
@@ -262,6 +271,7 @@ function Work() {
                 layout="responsive"
                 width="700"
                 height="500"
+                style={{borderRadius:'10px'}}
               />
             </Box>
           </Stack>
@@ -308,6 +318,7 @@ function Work() {
                 src={require("../assests/embeddedsystem.gif")}
                 alt="Embedded System"
                 layout="responsive"
+                style={{borderRadius:'10px'}}
               />
             </Box>
             <Box
@@ -330,7 +341,7 @@ function Work() {
               }}
             >
               <Typography
-                sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
+                sx={{ fontSize: "30px", fontWeight: "bold", color: "#fff" }}
               >
                 Embedded System
               </Typography>
@@ -338,7 +349,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -348,7 +359,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -366,9 +377,11 @@ function Work() {
                 }, 
                 padding: "5px 8px",
                 borderRadius: "10px",
-                backgroundColor: "black",
-                color: "#fff",
+                backgroundColor: "#fff",
+                color: "#000",
                 textAlign: "center",
+                fontWeight: "bold",
+                fontWeight: "bold",
                 "&:hover": {
                   color: "black",
                   fontWeight: "bold",
@@ -402,7 +415,7 @@ function Work() {
                 sm: "10px 20px",
                 xs: "10px 20px",
               },
-              backgroundColor: "#e6e6e6",
+              backgroundColor: "#00000079",
             }}
           >
             <Box
@@ -425,14 +438,14 @@ function Work() {
               }}
             >
               <Typography
-                sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
+                sx={{ fontSize: "30px", fontWeight: "bold", color: "#fff" }}
               >
                 Automation
               </Typography>
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -442,7 +455,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -460,9 +473,10 @@ function Work() {
                   }, 
                   padding: "5px 8px",
                   borderRadius: "10px",
-                  backgroundColor: "black",
-                  color: "#fff",
+                  backgroundColor: "#fff",
+                  color: "#000",
                   textAlign: "center",
+                  fontWeight: "bold",
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
@@ -493,8 +507,7 @@ function Work() {
                 src={require("../assests/arduino.gif")}
                 alt="Automation"
                 layout="responsive"
-                width="700"
-                height="500"
+                style={{borderRadius:'10px'}}
               />
             </Box>
           </Stack>
@@ -539,8 +552,7 @@ function Work() {
                 src={require("../assests/plcimg.gif")}
                 alt="PLC Programming"
                 layout="responsive"
-                width="700"
-                height="500"
+                style={{borderRadius:'10px'}}
               />
             </Box>
             <Box
@@ -563,7 +575,7 @@ function Work() {
               }}
             >
               <Typography
-                sx={{ fontSize: "30px", fontWeight: "bold", color: "#262626" }}
+                sx={{ fontSize: "30px", fontWeight: "bold", color: "#fff" }}
               >
                 PLC programming
               </Typography>
@@ -571,7 +583,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -585,7 +597,7 @@ function Work() {
               <Typography
                 sx={{
                   fontSize: "16px",
-                  color: "#262626",
+                  color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
                 }}
@@ -608,9 +620,10 @@ function Work() {
                   }, 
                   padding: "5px 8px",
                   borderRadius: "10px",
-                  backgroundColor: "black",
-                  color: "#fff",
+                  backgroundColor: "#fff",
+                  color: "#000",
                   textAlign: "center",
+                  fontWeight: "bold",
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",

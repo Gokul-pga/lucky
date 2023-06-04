@@ -62,7 +62,7 @@ function Contact() {
         <Box
           gap={3}
           sx={{
-            padding:{xl:'20px 0',lg:'20px 0',md:'20px 10px',sm:'20px 10px',xs:'20px 10px'},
+            padding:{xl:'20px 0',lg:'20px 0',md:'20px 10px',sm:'20px 20px',xs:'20px 20px'},
             display: "flex",
             flexDirection:{xl:"row",lg:'row',md:'column',sm:'column',xs:'column'},
             justifyContent:{xl:'space-around',lg:'space-around',sm:'space-around',md:'space-around',xs:'space-around'}
@@ -71,7 +71,7 @@ function Contact() {
           <Box gap={3} sx={{ display: "flex", flexDirection: "column", padding:"10px 20px" }}>
             <Typography
               className="animate__animated animate__zoomIn"
-              sx={{ color: "black", fontSize: "20px" , fontWeight:'bold',fontFamily:'monospace' }}
+              sx={{ color: "#fff", fontSize: "20px" , fontWeight:'bold',fontFamily:'monospace' }}
             >
               CONTACT INFO
             </Typography>
@@ -93,12 +93,12 @@ function Contact() {
                     borderRadius: "10px",
                   }}
                 />
-                <Box sx={{ color: "#fff" }}>
-                  <Typography color="black" fontWeight="bold" fontSize='16px'>
+                <Box sx={{ color: "#e3ebebe0" }}>
+                  <Typography color="#fff" fontWeight="bold" fontSize='16px'>
                     MAIL US
                   </Typography>
-                  <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
-                  <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
+                  <Typography sx={{color: "#e3ebebe0",fontSize:'14px'}}>......................</Typography>
+                  <Typography sx={{color: "#e3ebebe0",fontSize:'14px'}}>......................</Typography>
                 </Box>
               </Stack>
               {/* end stack 1 */}
@@ -115,12 +115,12 @@ function Contact() {
                     borderRadius: "10px",
                   }}
                 />
-                <Box sx={{ color: "#fff" }}>
-                  <Typography color="black" fontWeight="bold" fontSize='16px'>
+                <Box sx={{ color: "#e3ebebe0" }}>
+                  <Typography color="#e3ebebe0" fontWeight="bold" fontSize='16px'>
                     CONTACT US
                   </Typography>
-                  <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
-                  <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
+                  <Typography sx={{color: "#e3ebebe0",fontSize:'14px'}}>......................</Typography>
+                  <Typography sx={{color: "#e3ebebe0",fontSize:'14px'}}>......................</Typography>
                 </Box>
               </Stack>
               {/* end stack 2 */}
@@ -136,12 +136,12 @@ function Contact() {
                     borderRadius: "10px",
                   }}
                 />
-                <Box sx={{ color: "#fff" }}>
-                  <Typography color="black" fontWeight="bold" fontSize='16px' >
+                <Box sx={{ color: "#e3ebebe0" }}>
+                  <Typography color="#fff" fontWeight="bold" fontSize='16px' >
                     LOCATION
                   </Typography>
-                  <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
-                  <Typography sx={{color: "#0d0d0d",fontSize:'14px'}}>......................</Typography>
+                  <Typography sx={{color: "#e3ebebe0",fontSize:'14px'}}>......................</Typography>
+                  <Typography sx={{color: "#e3ebebe0",fontSize:'14px'}}>......................</Typography>
                 </Box>
               </Stack>
             </Box>
@@ -151,7 +151,7 @@ function Contact() {
             <Stack gap={2} sx={{ flexDirection: "column" }}>
               <Typography
                 className="animate__animated animate__zoomIn"
-                sx={{ color: "black", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace',width:'100%' }}
+                sx={{ color: "#fff", fontSize: "20px",fontWeight:'bold',fontFamily:'monospace',width:'100%' }}
               >
                 SOCIAL INFO
               </Typography>
@@ -169,8 +169,8 @@ function Contact() {
                     gap:1,
                     padding:'10px 15px'
                   }} > 
-                  < BsWhatsapp />
-                  <Typography>Whatsapp</Typography>
+                  < BsWhatsapp color="#fff"/>
+                  <Typography color="#fff">Whatsapp</Typography>
                   </Box>
                 
                  
@@ -184,8 +184,8 @@ function Contact() {
                     gap:1,
                     padding:'10px 15px'
                   }} > 
-                  < FiInstagram />
-                  <Typography>Instagram</Typography>
+                  < FiInstagram color="#fff"/>
+                  <Typography color="#fff">Instagram</Typography>
                   </Box>
 
                <Box  sx={{display:'flex',
@@ -197,8 +197,8 @@ function Contact() {
                     gap:1,
                     padding:'10px 15px'
                   }} > 
-                  < CiLinkedin />
-                  <Typography>Linkedin</Typography>
+                  < CiLinkedin color="#fff"/>
+                  <Typography color="#fff">Linkedin</Typography>
                   </Box>
                   
               </Stack>
@@ -210,11 +210,11 @@ function Contact() {
           className="animate__animated animate__zoomIn"
             sx={{
               width:{xl:"600px",lg:"600px",md:'100%',sm:'100%',xs:'100%'},
-              bgcolor:'#e6e6e6',
+              bgcolor:'#e3ebebde',
             //   backgroundImage:"linear-gradient(to bottom right, #4d94ff, #66ccff)",
               color: "#6699ff",
               borderRadius: "20px",
-              justifyContent:'space-around'
+              justifyContent:'space-around',
             }}
           >
            <Typography
@@ -242,40 +242,37 @@ function Contact() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              padding: "0 30px 30px 30px",
+              padding: "0 40px 30px 40px",
               color: "#6699ff",
+              
             }}
           >
             <TextField 
-            id="outlined"
+            
              variant="standard"
               label="Name" 
               value={name}
               onChange={(e) => {setInputdata({...inputdata,name:e.target.value})}}
               />
             <TextField
-              id="outlined-controlled"
               variant="standard"
               label="Email"
               value={email}
               onChange={(e) =>{setInputdata({...inputdata,email:e.target.value})}}
             />
             <TextField
-              id="outlined-controlled"
               variant="standard"
               label="Mobile Number"
               value={phone}
               onChange={(e) =>{setInputdata({...inputdata,phone:e.target.value})}}
             />
             <TextField
-              id="outlined-controlled"
               variant="standard"
               label="Subject"
               value={subject}
               onChange={(e) =>{setInputdata({...inputdata,subject:e.target.value})}}
             />
             <TextField
-              id="outlined-controlled"
               variant="standard"
               label="Message"
               value={message}

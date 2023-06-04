@@ -11,12 +11,24 @@
     z-index: -1000;
 } */
 main{
-    background-color: #0505059c;
+    background-color: #e3ebebde;
 }
 :root{
     --heading-font: 30px;
     --paragrap-font: 16px;
 }
 body{
-    background-color: rgba(255, 253, 253, 0.425);
+    background-image: url("../assests/backgroundimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width:850px) {
+    body{
+        background-image: url("../assests/backgroundmob.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }

@@ -17,7 +17,7 @@ export default function Coursecard() {
     <>
       <Stack
         direction="column"
-        sx={{ width: "100%", margin: "30px 0 0 0", gap: 3 }}
+        sx={{ width: "90%",  gap: 3, margin:'20px 30px 20px 30px' }}
       >
        
         <Stack
@@ -25,19 +25,20 @@ export default function Coursecard() {
             flexDirection:{
                 xl:'row',
                 lg:'row',
-                md:'column',
+                md:'row',
                 sm:'column',
                 xs:'column',
             },
             gap:{
                 xl:2,
                 lg:2,
-                md:2,
-                sm:2,
-                xs:2,
+                md:3,
+                sm:3,
+                xs:3,
             },
             width: "100%",
             justifyContent: "space-around",
+            alignItems:'center',
           }}
         >
            {/* ---------------- App developement Start -------------------- */}
@@ -205,7 +206,7 @@ export default function Coursecard() {
             flexDirection:{
                 xl:'row',
                 lg:'row',
-                md:'column',
+                md:'row',
                 sm:'column',
                 xs:'column',
             }, 
