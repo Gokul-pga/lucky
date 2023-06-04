@@ -82,8 +82,7 @@ const [scroll, setScroll] = useState(false)
                 bgcolor:'#333333',
                 zIndex:'1001',
                 position:'relative',
-                position:'sticky'
-
+                backgroundColor: "#000000d7"
                 }}
                 >
 
@@ -120,7 +119,7 @@ const [scroll, setScroll] = useState(false)
                 width:'100%',
                 position:'absolute',
                 zIndex:'1000',
-                bgcolor:'#333333',
+                backgroundColor: "#000000d7",
                 borderRadius:'0 0 15px 15px',
                 padding: "4px 0 0 0"
             }}>

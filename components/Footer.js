@@ -30,79 +30,19 @@ function Footer() {
   }
   
   
-  // const Nav = [
-  //   {
-  //     title: "Home",
-  //     to: "/",
-  //   },
-  //   {
-  //     title: "About",
-  //     to: "/about",
-  //   },
-  //   {
-  //     title: "Work",
-  //     to: "/work",
-  //   },
-  //   {
-  //     title: "Blog",
-  //     to: "/blog",
-  //   },
-  //   {
-  //     title: "Contact",
-  //     to: "/contact",
-  //   },
-  // ];
-
+  
   return (
     <>
       {/* ---------------- Footer Box Start------------------- */}
       <Stack
         flex={1}
         sx={{
-          backgroundColor: "#161717b2",
+          backgroundColor: "#161717",
           width: "100%",
           position:'absolute'
         }}
       >
-        {/* ---------------- Footer Navigation Start------------------- */}
-
-        {/* <Stack
-          direction="row"
-          flex={1}
-          sx={{
-            margin: "20px 60px",
-            padding: "20px",
-            alignItems: "center",
-            justifyContent: "space-around",
-            color: "#b5bbbd"
-              // backgroundColor:'palegreen'
-          }}
-        >
-          {Nav.map((item, index) => {
-            return (
-              <Typography
-              
-                key={index}
-                sx={{
-                  cursor: "pointer",
-                  fontSize: "15px",
-                  padding:'10px 15px',
-                  borderRadius:'10px',
-                  transition:'1s',
-                  "&:hover":{
-                    boxShadow: "1px 1px 10px #4dc3ff",
-                    color: "#eb8c34",
-                    transition:'0.3s'
-                  }
-                }}
-                onClick={()=>{router.push(item.to)}}
-              >
-                {item.title}
-              </Typography>
-            );
-          })}
-        </Stack> */}
-        {/* ---------------- Footer Navigation End------------------- */}
+   
 
         {/*  -------------------- Footer Description Start ---------------------*/}
         <Stack>
@@ -232,7 +172,8 @@ function Footer() {
       </Stack>
 
       {/*  -------------------- Footer Box End ---------------------*/}
-     { scroll && <IconButton sx={{
+    
+      { scroll && <IconButton sx={{
         position: "fixed",
         bottom: 20,
         right: 30,
