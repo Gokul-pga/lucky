@@ -25,3 +25,13 @@ body{
     background-position: "cover";
 }
 
+
+@media (max-width:850px) {
+    body{
+        background-image: url("../assests/backgroundmob.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: "cover";
+    }
+}
