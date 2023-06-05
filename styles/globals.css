@@ -40,11 +40,11 @@ body{
     font-weight: bolder;
 }
 
-/* @media (max-width:850px) {
+@media (max-width:850px) {
     body{
         background-image: url("../assests/backgroundmob.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-} */
+}
