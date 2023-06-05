@@ -54,7 +54,7 @@ function NavBar() {
 
         }}
       >
-        <Box 
+        <Box className="logotext"
           sx={{
             display:{
               xl:"block",
@@ -63,8 +63,8 @@ function NavBar() {
               sm: "none",
               xs: "none"},
             color: "#acafb0",
-            padding:'10px 0'
-            // backgroundColor:'grey'
+            padding:'10px 0' ,
+            fontWeight: "bold",
           }}
         >
           {/* <Image src={logo} alt="image" height="60" width="200" /> */}

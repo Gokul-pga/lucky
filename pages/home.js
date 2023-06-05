@@ -66,10 +66,10 @@ function Homepg() {
                   // bgcolor: "palegreen",
                   fontWeight: "bold",
                   fontFamily:'revert-layer',
-                  color:'#fff'
+                  color: "#4dc3ff"
                 }}
               >
-                 Welcome To <span style={{ color: "#99ddff", fontFamily:'revert-layer', }}>LuckyCharm Technologies</span> 
+                 Welcome To <span className="logohometext" style={{ fontFamily:'revert-layer' }}>LuckyCharm Technologies</span> 
               </Typography>
               <Box>
               <Typography
@@ -84,7 +84,7 @@ function Homepg() {
                   lineHeight: "2em",
                   fontFamily:'revert-layer',
                   fontWeight:'bold',
-                  color:'#fff'
+                  color: "#4dc3ff"
                 }}
               >
                 Let's Work With together

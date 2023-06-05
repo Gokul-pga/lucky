@@ -37,7 +37,7 @@ function Footer() {
       <Stack
         flex={1}
         sx={{
-          backgroundColor: "#161717",
+          backgroundColor: "#00000079",
           width: "100%",
           position:'absolute'
         }}

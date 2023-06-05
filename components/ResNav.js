@@ -94,10 +94,10 @@ const [scroll, setScroll] = useState(false)
             sm: "block",
             xs: "block"},
             }} >
-    <Typography sx={{fontSize:"25px",fontFamily:'serif', color:'#fff'}}>LuckyCharm</Typography>
+    <Typography className="logotext" sx={{fontSize:"25px",fontFamily:'serif', color:'#fff'}}>LuckyCharm</Typography>
     </Box>
 
-    <Box sx={{
+    <Box  sx={{
              display:{
                 xl:"none",
                 lg: "none",
