@@ -62,7 +62,6 @@ function NavBar() {
               md: "block",
               sm: "none",
               xs: "none"},
-            color: "#acafb0",
             padding:'10px 0' ,
             fontWeight: "bold",
           }}

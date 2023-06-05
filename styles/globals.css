@@ -30,18 +30,21 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
 }
 
 .logohometext{
     background:linear-gradient(to right, #1ab2ff, #ff1aff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bolder;
 }
-@media (max-width:850px) {
+
+/* @media (max-width:850px) {
     body{
         background-image: url("../assests/backgroundmob.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-}
+} */
