@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import appdev from "../assests/app developement.png";
 import webdev from "../assests/web developemet.png";
 import PLC from "../assests/PLC programming.png";
-import automation from "../assests/automation.jpg";
+import automation from "../assests/automation.png";
 import Embedded from "../assests/embedded system.png";
 import Image from "next/image";
 import { Box, Stack } from "@mui/material";
@@ -54,6 +54,8 @@ export default function Coursecard() {
               padding: "10px 0",
               borderRadius: "20px",
               textAlign: "center",
+              bgcolor:'#ffffffb7'
+
             }}
           >
             <Image
@@ -77,7 +79,7 @@ export default function Coursecard() {
                   fontWeight:'bold',
                   borderRadius: "2px",  
                   transition:'0.5s',
-                  backgroundColor: "#dfd9d9",
+                  backgroundColor: "#fff",
                   color: "#000",
                   padding: "5px 10px",
                   "&:hover": {
@@ -108,6 +110,8 @@ export default function Coursecard() {
               padding: "10px 0",
               borderRadius: "20px",
               textAlign: "center",
+              bgcolor:'#ffffffb7'
+
             }}
           >
             <Image
@@ -131,7 +135,7 @@ export default function Coursecard() {
                 fontWeight:'bold',
                 borderRadius: "2px",  
                 transition:'0.5s',
-                backgroundColor: "#dfd9d9",
+                backgroundColor: "#fff",
                 color: "#000",
                 padding: "5px 10px",
                 "&:hover": {
@@ -160,6 +164,7 @@ export default function Coursecard() {
               padding: "10px 0",
               borderRadius: "20px",
               textAlign: "center",
+              bgcolor:'#ffffffb7'
             }}
           >
             <Image
@@ -182,7 +187,7 @@ export default function Coursecard() {
                 fontWeight:'bold',
                 borderRadius: "2px",  
                 transition:'0.5s',
-                backgroundColor: "#dfd9d9",
+                backgroundColor: "#fff",
                 color: "#000",
                 padding: "5px 10px",
                 "&:hover": {
@@ -238,6 +243,7 @@ export default function Coursecard() {
               borderRadius: "20px",
               padding: "10px 0",
               textAlign: "center",
+              bgcolor:'#ffffffb7'
             }}
           >
             <Image
@@ -261,7 +267,7 @@ export default function Coursecard() {
                   fontWeight:'bold',
                   borderRadius: "2px",  
                   transition:'0.5s',
-                  backgroundColor: "#dfd9d9",
+                  backgroundColor: "#fff",
                   color: "#000",
                   padding: "5px 10px",
                   "&:hover": {
@@ -292,6 +298,7 @@ export default function Coursecard() {
               borderRadius: "20px",
               padding: "10px 0",
               textAlign: "center",
+              bgcolor:'#ffffffb7'
             }}
           >
             <Image
@@ -315,7 +322,7 @@ export default function Coursecard() {
                 fontWeight:'bold',
                 borderRadius: "2px",  
                 transition:'0.5s',
-                backgroundColor: "#dfd9d9",
+                backgroundColor: "#fff",
                 color: "#000",
                 padding: "5px 10px",
                 "&:hover": {

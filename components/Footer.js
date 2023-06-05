@@ -70,7 +70,7 @@ function Footer() {
               margin: {
                 md: "0 30px",
                 sm: "0 30px",
-                xs: "0 30px",
+                xs: "0 30px 20px 30px",
               },
             }}
           >
