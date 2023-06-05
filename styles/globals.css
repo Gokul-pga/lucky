@@ -25,23 +25,12 @@ body{
     background-position: "cover";
 }
 
-.logotext{
-    background:linear-gradient(to right, #1ab2ff, #ff1aff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.logohometext{
-    background:linear-gradient(to right, #1ab2ff, #ff1aff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 @media (max-width:850px) {
     body{
         background-image: url("../assests/backgroundmob.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-position: "cover";
     }
 }
