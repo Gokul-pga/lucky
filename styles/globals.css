@@ -22,7 +22,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: "cover";
+    background-position: cover;
 }
 
 .logotext{
@@ -46,5 +46,6 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-position: center;
     }
 }
