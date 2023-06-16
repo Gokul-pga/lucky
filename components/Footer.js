@@ -1,36 +1,31 @@
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/router";
-import React, { useEffect} from "react";
-import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
+import React, { useEffect } from "react";
+import VerticalAlignTopIcon from "@mui/icons-material/VerticalAlignTop";
 import { useState } from "react";
-
-
 
 function Footer() {
   const router = useRouter();
 
- const [scroll, setScroll] = useState(false)
-  
+  const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll" , () =>{
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 80) {
-        setScroll(true)
-      }else{
-        setScroll(false)
+        setScroll(true);
+      } else {
+        setScroll(false);
       }
-    })
-  }, [1])
+    });
+  }, [1]);
 
   const scrollup = () => {
     window.scrollTo({
-      top:0,
-      behavior:'smooth'
-    })
-  }
-  
-  
-  
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       {/* ---------------- Footer Box Start------------------- */}
@@ -39,21 +34,27 @@ function Footer() {
         sx={{
           backgroundColor: "#00000079",
           width: "100%",
-          position:'absolute'
+          position: "absolute",
         }}
       >
-   
-
         {/*  -------------------- Footer Description Start ---------------------*/}
         <Stack>
-          <Box
+          <Box className="logotext"
             sx={{
               color: "#b5bbbd",
               margin: "10px 30px",
               // backgroundColor:'yellowgreen'
             }}
           >
-            <Typography color='#fff' fontSize="30px" letterSpacing='0.2em' fontWeight='bold' fontFamily='revert-layer'>LuckyCharm</Typography>
+            <Typography
+              color="#fff"
+              fontSize="30px"
+              letterSpacing="0.2em"
+              fontWeight="bold"
+              fontFamily="revert-layer"
+            >
+              LuckyCharm
+            </Typography>
           </Box>
 
           <Stack
@@ -74,10 +75,12 @@ function Footer() {
               },
             }}
           >
-            <Box sx={{
-              display:'flex',
-              flexDirection:'column',
-            }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <Box
                 sx={{
                   fontSize: "25px",
@@ -92,28 +95,45 @@ function Footer() {
                   color: "#b5bbbd",
                 }}
               >
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
                   Automation
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                Embedded System
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  Embedded System
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                   Mobile App Developement
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  Mobile App Developement
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                PLC Programming
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  PLC Programming
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                Web Developement 
+                <Typography sx={{fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  Web Developement
                 </Typography>
               </Box>
             </Box>
 
-            <Box sx={{
-              display:'flex',
-              flexDirection:'column'
-            }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <Box
                 sx={{
                   fontSize: "25px",
@@ -128,20 +148,35 @@ function Footer() {
                   color: "#b5bbbd",
                 }}
               >
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
                   Automobile
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                Mechanical
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  Mechanical
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                Mechatronics
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  Mechatronics
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
                   Production
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
-                Robotics
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
+                  Robotics
                 </Typography>
               </Box>
             </Box>
@@ -161,7 +196,10 @@ function Footer() {
                   color: "#b5bbbd",
                 }}
               >
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em" }}>
+                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
+                    color:'#fff',
+                    cursor:"pointer"
+                  } }}>
                   info@luckycharm.com
                 </Typography>
               </Box>
@@ -172,23 +210,26 @@ function Footer() {
       </Stack>
 
       {/*  -------------------- Footer Box End ---------------------*/}
-    
-      { scroll && <IconButton sx={{
-        position: "fixed",
-        bottom: 20,
-        right: 30,
-        color:'#000',
-        transition:'0.5s',
-        bgcolor:'#fff',
-        "&:hover":{
-          bgcolor:'#595959',
-          color:'#fff'
-        }
-}}
-        onClick={scrollup}
->
-     <  VerticalAlignTopIcon fontSize="large" />
-      </IconButton> }
+
+      {scroll && (
+        <IconButton
+          sx={{
+            position: "fixed",
+            bottom: 20,
+            right: 30,
+            color: "#000",
+            transition: "0.5s",
+            bgcolor: "#fff",
+            "&:hover": {
+              bgcolor: "#595959",
+              color: "#fff",
+            },
+          }}
+          onClick={scrollup}
+        >
+          <VerticalAlignTopIcon fontSize="large" />
+        </IconButton>
+      )}
     </>
   );
 }

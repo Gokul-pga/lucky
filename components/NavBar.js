@@ -68,7 +68,7 @@ function NavBar() {
         >
           {/* <Image src={logo} alt="image" height="60" width="200" /> */}
           <Typography fontSize='30px' color='#fff' fontFamily='revert-layer' onClick= {() => {
-      router.push("/contact")
+      router.push("/")
     }}>LuckyCharm</Typography>
         </Box>
 

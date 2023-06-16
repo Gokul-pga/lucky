@@ -29,9 +29,9 @@ function about() {
             sx={{
               fontFamily: "revert-layer",
               fontSize: {
-                xl: "25px",
-                lg: "25px",
-                md: "25px",
+                xl: "30px",
+                lg: "30px",
+                md: "30px",
                 sm: "20px",
                 xs: "20px",
               },
@@ -54,7 +54,13 @@ function about() {
           }}
         >
           <Typography
-            sx={{ color: "#fff", textAlign: "justify", fontSize: "16px" }}
+            sx={{ color: "#fff", textAlign: "justify",  fontSize: {
+                xl: "18px",
+                lg: "18px",
+                md: "20px",
+                sm: "16px",
+                xs: "16px",
+              },}}
           >
             We bring success to your ideas through robust, feature-packed
             digital solutions, using our unparalleled imagination, creativity,
@@ -98,6 +104,7 @@ function about() {
                 fontSize: "16px",
                 mt: "10px",
                 textAlign: "justify",
+                  lineHeight: "1.5",
               }}
             >
               True to our name we have been providingLuckycharm Tecnologies. We
@@ -132,7 +139,7 @@ function about() {
                       },
                   color: "#000",
                   fontSize: "20px",
-                  bgcolor: "#fff",
+                  backgroundImage:"linear-gradient(to right, #1ab2ff, #ff1aff)",
                   padding:"5px 0 5px 10px",
                   fontWeight:"bold",
                 borderRadius:'5px'
@@ -148,7 +155,7 @@ function about() {
                 <Typography
                 sx={{ color: "#fff", fontSize: "20px", fontWeight: "bold" }}
               >
-                1 Analyze
+                1. Analyze
               </Typography>
                 </Box>
                 
@@ -158,8 +165,9 @@ function about() {
                   fontSize: "16px",
                   mt: "10px",
                   textAlign: "justify",
-                  lineHeight: "2",
+                  lineHeight: "1.5",
                   color: "#b5bbbd",
+                  
                 }}
               >
                 We start by acquiring a clear understanding of who your
