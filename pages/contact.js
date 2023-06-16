@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from '@/components/Layout';
-import {Box,Button,CardMedia,Stack,TextField,Typography,} from "@mui/material";
+import {Alert, Box,Button,CardMedia,Stack,TextField,Typography,} from "@mui/material";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
@@ -38,7 +38,7 @@ function Contact() {
       setValidator(true)
       
     }
-     fetch("http://localhost:4000/user", {
+     fetch("http://localhost:4000/post", {
       method:"POST",
       crossDomain:true,
       headers:{
@@ -236,7 +236,7 @@ function Contact() {
           >
             Let's Start With <span style={{ color: "#4dc3ff" }}>Together.</span>
           </Typography>
-          {validator && (<Typography sx={{color:'red',margin:'0 10px'}}>* All Fields are mandatory</Typography>)}
+          {validator && (<Alert severity="error" sx={{color:'red',margin:'0 10px'}}>All Fields are mandatory</Alert>)}
           <Box
             gap={3}
             sx={{

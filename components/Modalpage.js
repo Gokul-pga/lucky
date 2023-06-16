@@ -1,4 +1,5 @@
 import {
+  Alert,
   Box,
   Button,
   Modal,
@@ -29,7 +30,7 @@ function Modalpage({ open, setOpen }) {
       setInputdata({
         name:'',
     email:'',
-    phone:'',
+    phone:'', 
     subject:'',
     message:''
       }) 
@@ -40,7 +41,7 @@ function Modalpage({ open, setOpen }) {
       setValidator(true)
       
     }
-     fetch("http://localhost:5000/post", {
+     fetch("http://localhost:4000/post", {
       method:"POST",
       crossDomain:true,
       headers:{
@@ -104,7 +105,7 @@ function Modalpage({ open, setOpen }) {
           >
             Let's Start With <span style={{ color: "#eb8c34" }}>Together.</span>
           </Typography>
-          {validator && (<Typography sx={{color:'red',margin:'0 10px'}}>* All Fields are mandatory</Typography>)}
+          {validator && (<Alert severity="error" sx={{color:'red',margin:'0 10px'}}>All Fields are mandatory</Alert>)}
           <Box
             gap={2}
             sx={{
