@@ -59,6 +59,7 @@ function Footer() {
 
           <Stack
             flex={1}
+            gap={2}
             sx={{
               justifyContent: "space-around",
               flexDirection: {
@@ -85,7 +86,7 @@ function Footer() {
                 sx={{
                   fontSize: "25px",
                   color: "#fff",
-                  lineHeight: "3em",
+                  lineHeight: "1.5em",
                 }}
               >
                 Our Service
@@ -138,7 +139,7 @@ function Footer() {
                 sx={{
                   fontSize: "25px",
                   color: "#fff",
-                  lineHeight: "3em",
+                  lineHeight: "1.5em",
                 }}
               >
                 Project Category
@@ -186,7 +187,7 @@ function Footer() {
                 sx={{
                   fontSize: "25px",
                   color: "#fff",
-                  lineHeight: "3em",
+                  lineHeight: "1.5em",
                 }}
               >
                 Contact us
