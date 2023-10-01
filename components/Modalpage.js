@@ -8,45 +8,47 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
-import "animate.css"
-  
-
+import "animate.css";
 
 function Modalpage({ open, setOpen }) {
   const [inputdata, setInputdata] = useState({
-    name:'',
-    email:'',
-    phone:'',
-    subject:'',
-    message:''
-  })
-  const {name,email,phone,subject,message} = inputdata;
-  const [validator, setValidator] = useState(false)
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const { name, email, phone, subject, message } = inputdata;
+  const [validator, setValidator] = useState(false);
 
   const handleClose = () => setOpen(false);
 
   const handlesubmit = () => {
-    if (name !== '' && email !== '' && phone !== '' && subject !== '' && message !== '') {
+    if (
+      name !== "" &&
+      email !== "" &&
+      phone !== "" &&
+      subject !== "" &&
+      message !== ""
+    ) {
       setInputdata({
-        name:'',
-    email:'',
-    phone:'', 
-    subject:'',
-    message:''
-      }) 
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
       console.log(inputdata);
-      setValidator(false)
+      setValidator(false);
+    } else {
+      setValidator(true);
     }
-    else{
-      setValidator(true)
-      
-    }
-     fetch("http://localhost:4000/post", {
-      method:"POST",
-      crossDomain:true,
-      headers:{
-        "Content-Type":"application/json",
-        Accept:"application/json",
+    fetch("http://localhost:4000/post", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
       body: JSON.stringify({
         name,
@@ -55,37 +57,44 @@ function Modalpage({ open, setOpen }) {
         subject,
         message,
       }),
-    }).then((res) => res.json()).then((data) => {console.log(data,"userRegister");
-  });
-  }
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+      });
+  };
 
   return (
     <>
-      <Modal 
+      <Modal
         open={open}
         sx={{
           display: "flex",
-          flexDirection:'row',
+          flexDirection: "row",
           backgroundColor: "#3b3b3b9c",
           alignItems: "center",
           justifyContent: "center",
-          width:'100%',
+          width: "100%",
         }}
       >
-        <Stack className="animate__animated animate__zoomIn" direction='column'  sx={{
-           width: {
-            xl: "50%",
-            lg: "50%",
-            md: "80%",
-            sm: "80%",
-            xs: "80%",
-          },  
-          backgroundColor:'#e6e6e6',
-          boxShadow: 24,
-          color: "Black",
-          p: 2,
-          borderRadius:'10px'
-        }}>
+        <Stack
+          className="animate__animated animate__zoomIn"
+          direction="column"
+          sx={{
+            width: {
+              xl: "50%",
+              lg: "50%",
+              md: "80%",
+              sm: "80%",
+              xs: "80%",
+            },
+            backgroundColor: "#e6e6e6",
+            boxShadow: 24,
+            color: "Black",
+            p: 2,
+            borderRadius: "10px",
+          }}
+        >
           <Typography
             sx={{
               display: "flex",
@@ -105,7 +114,11 @@ function Modalpage({ open, setOpen }) {
           >
             Let's Start With <span style={{ color: "#eb8c34" }}>Together.</span>
           </Typography>
-          {validator && (<Alert severity="error" sx={{color:'red',margin:'0 10px'}}>All Fields are mandatory</Alert>)}
+          {validator && (
+            <Alert severity="error" sx={{ color: "red", margin: "0 10px" }}>
+              All Fields are mandatory
+            </Alert>
+          )}
           <Box
             gap={2}
             sx={{
@@ -115,41 +128,51 @@ function Modalpage({ open, setOpen }) {
               color: "#6699ff",
             }}
           >
-            <TextField 
-            id="outlined"
-             variant="standard"
-              label="Name" 
+            <TextField
+              id="outlined"
+              variant="standard"
+              label="Name"
               value={name}
-              onChange={(e) => {setInputdata({...inputdata,name:e.target.value})}}
-              />
+              onChange={(e) => {
+                setInputdata({ ...inputdata, name: e.target.value });
+              }}
+            />
 
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Email"
               value={email}
-              onChange={(e) =>{setInputdata({...inputdata,email:e.target.value})}}
+              onChange={(e) => {
+                setInputdata({ ...inputdata, email: e.target.value });
+              }}
             />
-             <TextField
+            <TextField
               id="outlined-controlled"
               variant="standard"
               label="Mobile Number"
               value={phone}
-              onChange={(e) =>{setInputdata({...inputdata,phone:e.target.value})}}
+              onChange={(e) => {
+                setInputdata({ ...inputdata, phone: e.target.value });
+              }}
             />
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Subject"
               value={subject}
-              onChange={(e) =>{setInputdata({...inputdata,subject:e.target.value})}}
+              onChange={(e) => {
+                setInputdata({ ...inputdata, subject: e.target.value });
+              }}
             />
             <TextField
               id="outlined-controlled"
               variant="standard"
               label="Message"
               value={message}
-              onChange={(e) =>{setInputdata({...inputdata,message:e.target.value})}}
+              onChange={(e) => {
+                setInputdata({ ...inputdata, message: e.target.value });
+              }}
             />
           </Box>
           <Box
@@ -166,14 +189,16 @@ function Modalpage({ open, setOpen }) {
                 color: "#fff",
                 borderRadius: "4px",
                 textAlign: "center",
-                transition:'0.3s',
-                "&:hover":{
-                    backgroundColor:'green',
-                    color:'#fff',
-                    borderRadius: "10px",
-                }
+                transition: "0.3s",
+                "&:hover": {
+                  backgroundColor: "green",
+                  color: "#fff",
+                  borderRadius: "10px",
+                },
               }}
-              onClick={() => {handlesubmit()}}
+              onClick={() => {
+                handlesubmit();
+              }}
             >
               Send Message
             </Button>
@@ -184,13 +209,13 @@ function Modalpage({ open, setOpen }) {
                 padding: "5px 20px",
                 borderRadius: "4px",
                 color: "#fff",
-                transition:'0.3s',
+                transition: "0.3s",
                 textAlign: "center",
-                "&:hover":{
-                    backgroundColor:'red',
-                    borderRadius: "10px",
-                    color:'#fff'
-                }
+                "&:hover": {
+                  backgroundColor: "red",
+                  borderRadius: "10px",
+                  color: "#fff",
+                },
               }}
             >
               Cancel
