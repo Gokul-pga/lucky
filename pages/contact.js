@@ -271,9 +271,7 @@ function Contact() {
                   }}
                 >
                   <FiInstagram color="#fff" />
-                  <Typography color="#fff" >
-                    Instagram
-                  </Typography>
+                  <Typography color="#fff">Instagram</Typography>
                 </Box>
 
                 <Box

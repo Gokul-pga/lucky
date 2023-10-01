@@ -19,7 +19,7 @@ function Work() {
               md: 7,
               sm: 7,
               xs: 7,
-            }
+            },
           }}
         >
           {/* ------------------------------------- Web Developement start----------------------------------- */}
@@ -60,7 +60,7 @@ function Work() {
                 src={require("../assests/webdev.gif")}
                 alt="Web Developement"
                 layout="responsive"
-                style={{borderRadius:'10px'}}
+                style={{ borderRadius: "10px" }}
               />
             </Box>
             <Box
@@ -96,7 +96,7 @@ function Work() {
                   fontWeight: "bold",
                 }}
               >
-                Front-end and Back-end 
+                Front-end and Back-end
               </Typography>
               <Typography
                 sx={{
@@ -104,9 +104,9 @@ function Work() {
                   color: "#bec1c2cc",
                   fontFamily: "sans-serif",
                   textAlign: "justify",
-                }} 
+                }}
               >
-                 If you're looking for a web development firm that will
+                If you're looking for a web development firm that will
                 prioritize your business and brand objectives, while also taking
                 into consideration the all-elusive factor of uniqueness, then
                 your search ends with Luckycarm.
@@ -119,9 +119,12 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-                Having working with websites and applications developement by using HTML, CSS, Javascript, React JS and Next JS for Front-end and for backend technolog we have using MongoDB and MySQL for database to store the datas.
+                Having working with websites and applications developement by
+                using HTML, CSS, Javascript, React JS and Next JS for Front-end
+                and for backend technolog we have using MongoDB and MySQL for
+                database to store the datas.
               </Typography>
-              
+
               <Button
                 sx={{
                   width: {
@@ -130,18 +133,18 @@ function Work() {
                     md: "20%",
                     sm: "20%",
                     xs: "40%",
-                  }, 
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
                   color: "#000",
                   textAlign: "center",
-                  fontWeight:'600',
+                  fontWeight: "600",
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s',
-                    bgcolor:'#99ddff'
+                    transition: "0.3s",
+                    bgcolor: "#99ddff",
                   },
                 }}
               >
@@ -205,7 +208,10 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-               The app development process includes creating installable applications for the mobile devices and implementing backend services, for instance data access through an API. Testing the application on target devices is also part of the process.
+                The app development process includes creating installable
+                applications for the mobile devices and implementing backend
+                services, for instance data access through an API. Testing the
+                application on target devices is also part of the process.
               </Typography>
               <Typography
                 sx={{
@@ -215,30 +221,32 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-                It's based on React, Facebook's JavaScript library for building user interfaces, but instead of targeting the browser, it targets mobile platforms.
+                It's based on React, Facebook's JavaScript library for building
+                user interfaces, but instead of targeting the browser, it
+                targets mobile platforms.
               </Typography>
               <Button
-               sx={{
-                width: {
-                  xl: "20%",
-                  lg: "20%",
-                  md: "20%",
-                  sm: "20%",
-                  xs: "40%",
-                }, 
-                padding: "5px 8px",
-                borderRadius: "10px",
-                backgroundColor: "#fff",
-                color: "#000",
-                textAlign: "center",
-                fontWeight: "bold",
-                "&:hover": {
-                  color: "black",
+                sx={{
+                  width: {
+                    xl: "20%",
+                    lg: "20%",
+                    md: "20%",
+                    sm: "20%",
+                    xs: "40%",
+                  },
+                  padding: "5px 8px",
+                  borderRadius: "10px",
+                  backgroundColor: "#fff",
+                  color: "#000",
+                  textAlign: "center",
                   fontWeight: "bold",
-                  transition:'0.3s',
-                  bgcolor:'#99ddff'
-                },
-              }}
+                  "&:hover": {
+                    color: "black",
+                    fontWeight: "bold",
+                    transition: "0.3s",
+                    bgcolor: "#99ddff",
+                  },
+                }}
               >
                 Learn more!
               </Button>
@@ -264,7 +272,7 @@ function Work() {
                 layout="responsive"
                 width="700"
                 height="500"
-                style={{borderRadius:'10px'}}
+                style={{ borderRadius: "10px" }}
               />
             </Box>
           </Stack>
@@ -311,7 +319,7 @@ function Work() {
                 src={require("../assests/embeddedsystem.gif")}
                 alt="Embedded System"
                 layout="responsive"
-                style={{borderRadius:'10px'}}
+                style={{ borderRadius: "10px" }}
               />
             </Box>
             <Box
@@ -338,7 +346,7 @@ function Work() {
               >
                 Embedded System
               </Typography>
-        
+
               <Typography
                 sx={{
                   fontSize: "16px",
@@ -347,7 +355,10 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-                The embedded system is a combination of computer hardware and software designed for a specific function. Embedded systems may also function within a larger system. The systems can be programmable or have a fixed functionality.
+                The embedded system is a combination of computer hardware and
+                software designed for a specific function. Embedded systems may
+                also function within a larger system. The systems can be
+                programmable or have a fixed functionality.
               </Typography>
               <Typography
                 sx={{
@@ -357,31 +368,37 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-                While embedded systems are computing systems, they can range from having no user interface (UI) -- for example, on devices designed to perform a single task -- to complex graphical user interfaces (GUIs), such as in mobile devices. User interfaces can include buttons, LEDs (light-emitting diodes) and touchscreen sensing. Some systems use remote user interfaces as well.
+                While embedded systems are computing systems, they can range
+                from having no user interface (UI) -- for example, on devices
+                designed to perform a single task -- to complex graphical user
+                interfaces (GUIs), such as in mobile devices. User interfaces
+                can include buttons, LEDs (light-emitting diodes) and
+                touchscreen sensing. Some systems use remote user interfaces as
+                well.
               </Typography>
               <Button
-               sx={{
-                width: {
-                  xl: "20%",
-                  lg: "20%",
-                  md: "20%",
-                  sm: "20%",
-                  xs: "40%",
-                }, 
-                padding: "5px 8px",
-                borderRadius: "10px",
-                backgroundColor: "#fff",
-                color: "#000",
-                textAlign: "center",
-                fontWeight: "bold",
-                fontWeight: "bold",
-                "&:hover": {
-                  color: "black",
+                sx={{
+                  width: {
+                    xl: "20%",
+                    lg: "20%",
+                    md: "20%",
+                    sm: "20%",
+                    xs: "40%",
+                  },
+                  padding: "5px 8px",
+                  borderRadius: "10px",
+                  backgroundColor: "#fff",
+                  color: "#000",
+                  textAlign: "center",
                   fontWeight: "bold",
-                  transition:'0.3s',
-                  bgcolor:'#99ddff'
-                },
-              }}
+                  fontWeight: "bold",
+                  "&:hover": {
+                    color: "black",
+                    fontWeight: "bold",
+                    transition: "0.3s",
+                    bgcolor: "#99ddff",
+                  },
+                }}
               >
                 Learn more!
               </Button>
@@ -443,7 +460,12 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-               Automation system is an integration of sensors, controls, and actuators designed to perform a function with minimal or no human intervention. The field concerned in this subject is called Mechatronics which is an interdisciplinary branch of engineering that combines mechanical, electrical, and electronic systems.
+                Automation system is an integration of sensors, controls, and
+                actuators designed to perform a function with minimal or no
+                human intervention. The field concerned in this subject is
+                called Mechatronics which is an interdisciplinary branch of
+                engineering that combines mechanical, electrical, and electronic
+                systems.
               </Typography>
               <Typography
                 sx={{
@@ -453,17 +475,22 @@ function Work() {
                   textAlign: "justify",
                 }}
               >
-               Most automation systems are derived from manual processes such as drilling, cutting, welding, and so on. These systems use robotic arms to manipulate the movement of the tool that performs the original function. Other applications, particularly in the field of process control, use automation to monitor and control process parameters. 
+                Most automation systems are derived from manual processes such
+                as drilling, cutting, welding, and so on. These systems use
+                robotic arms to manipulate the movement of the tool that
+                performs the original function. Other applications, particularly
+                in the field of process control, use automation to monitor and
+                control process parameters.
               </Typography>
               <Button
-                 sx={{
+                sx={{
                   width: {
                     xl: "20%",
                     lg: "20%",
                     md: "20%",
                     sm: "20%",
                     xs: "40%",
-                  }, 
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
@@ -473,8 +500,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s',
-                    bgcolor:'#99ddff'
+                    transition: "0.3s",
+                    bgcolor: "#99ddff",
                   },
                 }}
               >
@@ -500,7 +527,7 @@ function Work() {
                 src={require("../assests/arduino.gif")}
                 alt="Automation"
                 layout="responsive"
-                style={{borderRadius:'10px'}}
+                style={{ borderRadius: "10px" }}
               />
             </Box>
           </Stack>
@@ -545,7 +572,7 @@ function Work() {
                 src={require("../assests/plcimg.gif")}
                 alt="PLC Programming"
                 layout="responsive"
-                style={{borderRadius:'10px'}}
+                style={{ borderRadius: "10px" }}
               />
             </Box>
             <Box
@@ -610,7 +637,7 @@ function Work() {
                     md: "20%",
                     sm: "20%",
                     xs: "40%",
-                  }, 
+                  },
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
@@ -620,8 +647,8 @@ function Work() {
                   "&:hover": {
                     color: "black",
                     fontWeight: "bold",
-                    transition:'0.3s',
-                    bgcolor:'#99ddff'
+                    transition: "0.3s",
+                    bgcolor: "#99ddff",
                   },
                 }}
               >
