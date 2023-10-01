@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Layout from "@/components/Layout";
 import {
-  Alert,
   Box,
   Button,
-  CardMedia,
   Stack,
   TextField,
   Typography,
@@ -13,7 +11,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 import { BsWhatsapp } from "react-icons/bs";
-import { CiLinkedin } from "react-icons/ci";
+import { IoLogoLinkedin } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
 import "animate.css";
 import { Toaster, toast } from "react-hot-toast";
@@ -295,7 +293,7 @@ function Contact() {
                     },
                   }}
                 >
-                  <CiLinkedin color="#fff" />
+                  <IoLogoLinkedin color="#fff" />
                   <Typography color="#fff">Linkedin</Typography>
                 </Box>
               </Stack>
