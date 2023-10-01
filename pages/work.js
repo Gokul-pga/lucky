@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Box, Button, CardMedia, Stack, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
+import "../styles/work.module.css";
 
 function Work() {
   return (
