@@ -79,7 +79,7 @@ const [scroll, setScroll] = useState(false)
                 flexDirection:'row',
                 justifyContent:'space-between',
                 padding:'10px 15px 20px 15px',
-                bgcolor:'#333333',
+                bgcolor:'#000',
                 zIndex:'1001',
                 position:'relative',
                 backgroundColor: "#000000d7"
