@@ -1,42 +1,35 @@
 import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
-import  "animate.css";
-import VerticalAlignTopIcon from '@mui/icons-material/VerticalAlignTop';
-
-
-
+import "animate.css";
+import VerticalAlignTopIcon from "@mui/icons-material/VerticalAlignTop";
+import { adminsignup } from "@/pages/adminsignup";
 
 function NavBar() {
+  const router = useRouter();
+  const location = router.pathname;
+  const [open, setOpen] = useState(false);
 
-  const router =useRouter()
-  const location = router.pathname
-const [open, setOpen] = useState(false)
-
-const [scroll, setScroll] = useState(false)
-  
+  const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll" , () =>{
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 80) {
-        setScroll(true)
-      }else{
-        setScroll(false)
+        setScroll(true);
+      } else {
+        setScroll(false);
       }
-    })
-  }, [1])
+    });
+  }, [1]);
 
   const scrollup = () => {
     window.scrollTo({
-      top:0,
-      behavior:'smooth'
-    })
-  }
-  
-
-
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const Nav = [
     {
@@ -62,106 +55,141 @@ const [scroll, setScroll] = useState(false)
   ];
 
   return (
-
     <>
-    <Stack direction='column'  sx={{
-        display:{
-            xl:"none",
+      <Stack
+        direction="column"
+        sx={{
+          display: {
+            xl: "none",
             lg: "none",
             md: "none",
             sm: "block",
-            xs: "block"},
-            width:'100%',
-    }}>
-
-    <Stack  sx={{
-                display:'flex',
-                flexDirection:'row',
-                justifyContent:'space-between',
-                padding:'10px 15px 20px 15px',
-                bgcolor:'#000',
-                zIndex:'1001',
-                position:'relative',
-                backgroundColor: "#000000d7"
-                }}
-                >
-
-    <Box sx={{
-         display:{
-            xl:"none",
-            lg: "none",
-            md: "none",
-            sm: "block",
-            xs: "block"},
-            }} >
-    <Typography className="logotext" sx={{fontSize:"25px",fontFamily:'serif', color:'#fff'}}>LuckyCharm</Typography>
-    </Box>
-
-    <Box  sx={{
-             display:{
-                xl:"none",
+            xs: "block",
+          },
+          width: "100%",
+        }}
+      >
+        <Stack
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            padding: "10px 15px 20px 15px",
+            bgcolor: "#000",
+            zIndex: "1001",
+            position: "relative",
+          }}
+        >
+          <Box
+            sx={{
+              display: {
+                xl: "none",
                 lg: "none",
                 md: "none",
                 sm: "block",
-                xs: "block"},
-            color:'#fff',
-            fontSize:'30px',
-        }}
-        onClick={() => {setOpen((p) => !p)}}>
-        <AiOutlineMenu/>
-        </Box>
-    </Stack>
-    { open && <Box  className="animate__animated animate__fadeInDown"  sx={{
-                display:'flex',
-                flexDirection:'column',
-                color:'#fff',
-                alignItems:'center',
-                width:'100%',
-                position:'absolute',
-                zIndex:'1000',
-                backgroundColor: "#000000d7",
-                borderRadius:'0 0 15px 15px',
-                padding: "4px 0 0 0"
-            }}>
-                {Nav.map((item, index) => {
-              return (
-                <Button
-                  key={index}
-                  onClick={() => {
-                    router.push(item.to)
-                  }}
-                  sx={{ display:{
-                    xl:"none",
-                    lg: "none",
-                    md: "none",
-                    sm: "block",
-                    xs: "block"},
-                    color: location == item.to ?  "#99ddff" : "#fff",
-                   fontSize:'14px'
-                  }}
-                >
-                  {item.title}
-                </Button>
-              );
-            })}
-            </Box> }
-    </Stack>
-    { scroll && <IconButton sx={{
-        position: "fixed",
-        bottom: 30,
-        right: 30,
-        color:'#000',
-        transition:'0.5s',
-        bgcolor:'#a6a6a6',
-        "&:hover":{
-          bgcolor:'#595959',
-          color:'#fff'
-        }
-}}
-        onClick={scrollup}
->
-     <  VerticalAlignTopIcon  />
-      </IconButton> }
+                xs: "block",
+              },
+            }}
+          >
+            <Typography
+              className="logotext"
+              sx={{ fontSize: "20px", fontFamily: "serif", color: "#fff" }}
+            >
+              LuckyCharm
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              display: {
+                xl: "none",
+                lg: "none",
+                md: "none",
+                sm: "block",
+                xs: "block",
+              },
+              color: "#fff",
+              fontSize: "20px",
+            }}
+            onClick={() => {
+              setOpen((p) => !p);
+            }}
+          >
+            <AiOutlineMenu />
+          </Box>
+        </Stack>
+        {open && (
+          <Box
+            className="animate__animated animate__fadeInDown"
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              color: "#fff",
+              width: "100%",
+              position: "absolute",
+              zIndex: "1000",
+              backgroundColor: "#000000d7",
+              borderRadius: "0 0 15px 15px",
+              justifyContent: "space-between",
+              padding: "0 10px",
+            }}
+          >
+            <div>
+              {Nav.map((item, index) => {
+                return (
+                  <Button
+                    key={index}
+                    onClick={() => {
+                      router.push(item.to);
+                    }}
+                    sx={{
+                      display: {
+                        xl: "none",
+                        lg: "none",
+                        md: "none",
+                        sm: "block",
+                        xs: "block",
+                      },
+                      color: location == item.to ? "#99ddff" : "#fff",
+                      fontSize: "14px",
+                    }}
+                  >
+                    {item.title}
+                  </Button>
+                );
+              })}
+            </div>
+            <div
+              onClick={() => {
+                router.push("/adminsignup");
+              }}
+            >
+              <Typography className="bg-gray-400 px-2 rounded-sm text-md mt-1">
+                Admin
+              </Typography>
+            </div>
+          </Box>
+        )}
+      </Stack>
+      {scroll && (
+        <IconButton
+          sx={{
+            position: "fixed",
+            bottom: 30,
+            right: 30,
+            color: "#000",
+            transition: "0.5s",
+            bgcolor: "#a6a6a6",
+            "&:hover": {
+              bgcolor: "#595959",
+              color: "#fff",
+            },
+          }}
+          onClick={scrollup}
+        >
+          <VerticalAlignTopIcon />
+        </IconButton>
+      )}
     </>
   );
 }

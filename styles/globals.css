@@ -36,7 +36,7 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
+    font-weight: 900;
 }
 .logobg{
     background:linear-gradient(to right, #1ab2ff, #ff1aff);
