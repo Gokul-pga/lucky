@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import "animate.css";
+import { Toaster, toast } from "react-hot-toast";
+import { contactDetails } from "@/routes/contactDetails";
 
 function Modalpage({ open, setOpen }) {
   const [inputdata, setInputdata] = useState({
@@ -19,7 +21,6 @@ function Modalpage({ open, setOpen }) {
     message: "",
   });
   const { name, email, phone, subject, message } = inputdata;
-  const [validator, setValidator] = useState(false);
 
   const handleClose = () => setOpen(false);
 
@@ -31,6 +32,7 @@ function Modalpage({ open, setOpen }) {
       subject !== "" &&
       message !== ""
     ) {
+      contactDetails(name, email, phone, subject, message)
       setInputdata({
         name: "",
         email: "",
@@ -39,33 +41,15 @@ function Modalpage({ open, setOpen }) {
         message: "",
       });
       console.log(inputdata);
-      setValidator(false);
+      toast;
     } else {
-      setValidator(true);
+      toast.error("All fields are mandatory");
     }
-    fetch("http://localhost:4000/post", {
-      method: "POST",
-      crossDomain: true,
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        subject,
-        message,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data, "userRegister");
-      });
   };
 
   return (
     <>
+      <Toaster />
       <Modal
         open={open}
         sx={{
@@ -88,7 +72,7 @@ function Modalpage({ open, setOpen }) {
               sm: "80%",
               xs: "80%",
             },
-            backgroundColor: "#e6e6e6",
+            backgroundColor: "#e3ebebde",
             boxShadow: 24,
             color: "Black",
             p: 2,
@@ -112,13 +96,9 @@ function Modalpage({ open, setOpen }) {
               color: "#0d0d0d",
             }}
           >
-            Let's Start With <span style={{ color: "#eb8c34" }}>Together.</span>
+            Let's Start With <span style={{ color: "#4dc3ff" }}>Together.</span>
           </Typography>
-          {validator && (
-            <Alert severity="error" sx={{ color: "red", margin: "0 10px" }}>
-              All Fields are mandatory
-            </Alert>
-          )}
+
           <Box
             gap={2}
             sx={{
@@ -184,9 +164,10 @@ function Modalpage({ open, setOpen }) {
           >
             <Button
               sx={{
-                backgroundColor: "black",
+                bgcolor: "#000",
                 padding: "5px 8px",
-                color: "#fff",
+                color: "#000",
+                // fontWeight:"bold",
                 borderRadius: "4px",
                 textAlign: "center",
                 transition: "0.3s",
@@ -208,7 +189,7 @@ function Modalpage({ open, setOpen }) {
                 backgroundColor: "black",
                 padding: "5px 20px",
                 borderRadius: "4px",
-                color: "#fff",
+                color: "#000",
                 transition: "0.3s",
                 textAlign: "center",
                 "&:hover": {

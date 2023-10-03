@@ -1,11 +1,6 @@
 import Layout from "@/components/Layout";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import { TbNumber1 } from 'react-icons/tb';
-import { TbNumber2 } from 'react-icons/tb';
-import { TbNumber } from 'react-icons/tb';
-import LooksOneRoundedIcon from '@mui/icons-material/LooksOneRounded';
-
 
 function about() {
   return (
@@ -14,12 +9,13 @@ function about() {
         maxWidth="xl"
         sx={{
           width: "100%",
+          bgcolor: "#050505e5",
         }}
       >
         <Box
           sx={{
             //bgcolor: "palegreen",
-            mt: "10px",
+            pt: "10px",
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
@@ -54,13 +50,17 @@ function about() {
           }}
         >
           <Typography
-            sx={{ color: "#fff", textAlign: "justify",  fontSize: {
+            sx={{
+              color: "#fff",
+              textAlign: "justify",
+              fontSize: {
                 xl: "18px",
                 lg: "18px",
                 md: "20px",
                 sm: "16px",
                 xs: "16px",
-              },}}
+              },
+            }}
           >
             We bring success to your ideas through robust, feature-packed
             digital solutions, using our unparalleled imagination, creativity,
@@ -104,7 +104,7 @@ function about() {
                 fontSize: "16px",
                 mt: "10px",
                 textAlign: "justify",
-                  lineHeight: "1.5",
+                lineHeight: "1.5",
               }}
             >
               True to our name we have been providingLuckycharm Tecnologies. We
@@ -115,6 +115,7 @@ function about() {
           </Box>
 
           <Box
+            gap={4}
             sx={{
               width: {
                 xl: "50%",
@@ -125,40 +126,42 @@ function about() {
               },
             }}
           >
-            <Box sx={{
-                margin:'0 0 10px 0'
-            }}>
+            <Box
+              sx={{
+                margin: "0 0 10px 0",
+              }}
+            >
               <Typography
                 sx={{
-                    width: {
-                        xl: "100%",
-                        lg: "100%",
-                        md: "100%",
-                        sm: "75%",
-                        xs: "75%",
-                      },
+                  width: {
+                    xl: "100%",
+                    lg: "100%",
+                    md: "100%",
+                    sm: "75%",
+                    xs: "75%",
+                  },
                   color: "#000",
                   fontSize: "20px",
-                  backgroundImage:"linear-gradient(to right, #1ab2ff, #ff1aff)",
-                  padding:"5px 0 5px 10px",
-                  fontWeight:"bold",
-                borderRadius:'5px'
+                  backgroundImage:
+                    "linear-gradient(to right, #1ab2ff, #ff1aff)",
+                  padding: "5px 0 5px 10px",
+                  fontWeight: "bold",
+                  borderRadius: "5px",
                 }}
               >
                 Our process :)
               </Typography>
             </Box>
 
-            <Box>
-             
-                <Box>
+            <Box sx={{ pb: "4px" }}>
+              <Box>
                 <Typography
-                sx={{ color: "#fff", fontSize: "20px", fontWeight: "bold" }}
-              >
-                1. Analyze
-              </Typography>
-                </Box>
-                
+                  sx={{ color: "#fff", fontSize: "20px", fontWeight: "bold" }}
+                >
+                  1. Analyze
+                </Typography>
+              </Box>
+
               <Typography
                 sx={{
                   color: "#fff",
@@ -167,13 +170,61 @@ function about() {
                   textAlign: "justify",
                   lineHeight: "1.5",
                   color: "#b5bbbd",
-                  
                 }}
               >
                 We start by acquiring a clear understanding of who your
                 customers, and what your digital business objectives are. Then,
                 our team proceeds by developing a road map to realize them with
                 strategic milestones and timelines
+              </Typography>
+            </Box>
+
+            <Box sx={{ pb: "4px" }}>
+              <Box>
+                <Typography
+                  sx={{ color: "#fff", fontSize: "20px", fontWeight: "bold" }}
+                >
+                  2. Research and Analysis
+                </Typography>
+              </Box>
+
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontSize: "16px",
+                  mt: "10px",
+                  textAlign: "justify",
+                  lineHeight: "1.5",
+                  color: "#b5bbbd",
+                }}
+              >
+                A customized solution is crafted keeping in mind end-user ease,
+                speed, and fit-for-business solutions.
+              </Typography>
+            </Box>
+
+            <Box sx={{ pb: "4px" }}>
+              <Box>
+                <Typography
+                  sx={{ color: "#fff", fontSize: "20px", fontWeight: "bold" }}
+                >
+                  3. Delivery & Deployment
+                </Typography>
+              </Box>
+
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontSize: "16px",
+                  mt: "10px",
+                  textAlign: "justify",
+                  lineHeight: "1.5",
+                  color: "#b5bbbd",
+                }}
+              >
+                This tailor-made solution is tested against stringent standards
+                for a hit-the ground running enterprise-wide deployment to
+                achieve desired outcomes.
               </Typography>
             </Box>
           </Box>

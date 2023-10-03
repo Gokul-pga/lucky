@@ -32,7 +32,7 @@ function Footer() {
       <Stack
         flex={1}
         sx={{
-          backgroundColor: "#00000079",
+          backgroundColor: "#000",
           width: "100%",
           position: "absolute",
         }}
@@ -213,14 +213,13 @@ function Footer() {
       {/*  -------------------- Footer Box End ---------------------*/}
 
       {scroll && (
-        <IconButton
+        <IconButton className="bg-gray-400"
           sx={{
             position: "fixed",
             bottom: 20,
             right: 30,
             color: "#000",
             transition: "0.5s",
-            bgcolor: "#fff",
             "&:hover": {
               bgcolor: "#595959",
               color: "#fff",

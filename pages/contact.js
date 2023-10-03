@@ -49,10 +49,7 @@ function Contact() {
       toast.error("All fields are mandatory");
     }
   };
-  const whatsappLink = "https://web.whatsapp.com/";
-  const whatsapp = () => {
-    whatsappLink;
-  };
+  
 
   return (
     <>
@@ -83,6 +80,7 @@ function Contact() {
               md: "space-around",
               xs: "space-around",
             },
+            bgcolor:"#050505e5"
           }}
         >
           <Box

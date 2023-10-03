@@ -20,6 +20,7 @@ function Work() {
               sm: 7,
               xs: 7,
             },
+            bgcolor: "#050505e5",
           }}
         >
           {/* ------------------------------------- Web Developement start----------------------------------- */}
@@ -137,7 +138,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#000",
+                  color: "#fff",
                   textAlign: "center",
                   fontWeight: "600",
                   "&:hover": {
@@ -237,7 +238,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#000",
+                  color: "#fff",
                   textAlign: "center",
                   fontWeight: "bold",
                   "&:hover": {
@@ -388,7 +389,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#000",
+                  color: "#fff",
                   textAlign: "center",
                   fontWeight: "bold",
                   fontWeight: "bold",
@@ -494,7 +495,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#000",
+                  color: "#fff",
                   textAlign: "center",
                   fontWeight: "bold",
                   "&:hover": {
@@ -641,7 +642,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#000",
+                  color: "#fff",
                   textAlign: "center",
                   fontWeight: "bold",
                   "&:hover": {

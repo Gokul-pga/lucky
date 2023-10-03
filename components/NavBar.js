@@ -1,17 +1,14 @@
 import {
   Box,
-  Button,
-  Modal,
   Stack,
-  TextField,
   Typography,
 } from "@mui/material";
-import logo from "../assests/logo.jpeg";
 import React, { useState } from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
+import { adminsignup } from "../pages/adminsignup";
 
 function NavBar() {
+  const [open, setOpen] = useState(false);
   const router = useRouter();
   const location = router.pathname;
 
@@ -54,7 +51,7 @@ function NavBar() {
           alignItems: "center",
           justifyContent: "space-around",
           // backgroundImage: "linear-gradient(to right, #4dc3ff, #3333ff)"
-          bgcolor: "#00000079",
+          backgroundColor: "#000",
         }}
       >
         <Box
@@ -71,7 +68,6 @@ function NavBar() {
             fontWeight: "bold",
           }}
         >
-          {/* <Image src={logo} alt="image" height="60" width="200" /> */}
           <Typography
             fontSize="30px"
             color="#fff"
@@ -130,30 +126,35 @@ function NavBar() {
             })}
           </Stack>
         </Box>
-        {/* <Box sx={{
-           display:{
-          xl:"block",
-          lg: "block",
-          md: "none",
-          sm: "none",
-          xs: "none"},
-        }}>
+        <Box
+          sx={{
+            display: {
+              xl: "block",
+              lg: "block",
+              md: "none",
+              sm: "none",
+              xs: "none",
+            },
+          }}
+          onClick={() => {
+            router.push("/adminsignup")
+          }}
+        >
           <Typography
             sx={{
               alignItems: "center",
               justifyContent: "space-around",
-              padding: "10px 15px",
-              backgroundColor: "#b434eb",
-              borderRadius: 8,
-              fontSize: "20px",
+              padding: "4px 15px",
+              backgroundColor: "grey",
+              color: "#fff",
+              borderRadius: 1,
               cursor: "pointer",
             }}
-            
-            
           >
-            Contact Our Team
+            Admin
           </Typography>
-        </Box> */}
+        </Box>
+       
       </Stack>
     </>
   );

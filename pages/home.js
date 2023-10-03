@@ -8,13 +8,19 @@ import { useState } from "react";
 import Image from "next/image";
 
 function Homepg() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const router = useRouter();
   return (
     <>
-      <Layout >
-        <Box   sx={{ width: "100%",height:'100%', padding: "10px 0"}}>
-          
+      <Layout>
+        <Box
+          sx={{
+            width: "100%",
+            height: "100%",
+            padding: "10px 0",
+            bgcolor: "#050505e5",
+          }}
+        >
           <Stack
             flex={1}
             sx={{
@@ -28,9 +34,8 @@ function Homepg() {
               width: "80%",
               padding: "40px 20px",
               // boxShadow: "10px 10px 5px #cccccc",
-              mt:'10px',
-              borderRadius:'10px',
-             
+              mt: "10px",
+              borderRadius: "10px",
             }}
           >
             {/* <Typography
@@ -65,35 +70,41 @@ function Homepg() {
                   },
                   // bgcolor: "palegreen",
                   fontWeight: "bold",
-                  fontFamily:'revert-layer',
-                  color: "#4dc3ff"
+                  fontFamily: "revert-layer",
+                  color: "#4dc3ff",
                 }}
               >
-                 Welcome To <span className="logohometext" style={{ fontFamily:'revert-layer',fontWeight: "bold" }}>LuckyCharm Technologies</span> 
+                Welcome To{" "}
+                <span
+                  className="logohometext"
+                  style={{ fontFamily: "revert-layer", fontWeight: "bold" }}
+                >
+                  LuckyCharm Technologies
+                </span>
               </Typography>
               <Box>
-              <Typography
-                sx={{
-                  fontSize: {
-                    xl: "25pxpx",
-                    lg: "25pxpx",
-                    md: "20px",
-                    sm: "20px",
-                    xs: "20px",
-                  },
-                  lineHeight: "2em",
-                  fontFamily:'revert-layer',
-                  fontWeight:'bold',
-                  color: "#4dc3ff"
-                }}
-              >
-                Let's Work With together
-              </Typography>
+                <Typography
+                  sx={{
+                    fontSize: {
+                      xl: "25pxpx",
+                      lg: "25pxpx",
+                      md: "20px",
+                      sm: "20px",
+                      xs: "20px",
+                    },
+                    lineHeight: "2em",
+                    fontFamily: "revert-layer",
+                    fontWeight: "bold",
+                    color: "#4dc3ff",
+                  }}
+                >
+                  Let's Work With together
+                </Typography>
+              </Box>
             </Box>
-            </Box>
-           
+
             <Box>
-              <Button
+              <Button className="bg-gray-600 "
                 sx={{
                   padding: {
                     xl: "5px 80px",
@@ -102,22 +113,23 @@ function Homepg() {
                     sm: "3px 10px",
                     xs: "3px 10px",
                   },
-                  fontWeight:'bold',
-                  borderRadius: "5px",  
-                  transition:'0.5s',
-                  backgroundColor: "#e3ebebc5",
+                  fontWeight: "bold",
+                  borderRadius: "5px",
+                  transition: "0.5s",
                   color: "#fff",
                   "&:hover": {
-                  borderRadius: "10px",
-                  color: "#fff",
+                    borderRadius: "5px",
+                    color: "#fff",
                     backgroundColor: "#99ddff",
                   },
                 }}
-                onClick={() => {setOpen(true)}}
+                onClick={() => {
+                  setOpen(true);
+                }}
               >
                 Contact Our Team
               </Button>
-              { open && <Modalpage open={open} setOpen={setOpen}/>}
+              {open && <Modalpage open={open} setOpen={setOpen} />}
             </Box>
           </Stack>
 
