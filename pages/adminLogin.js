@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal } from "@mui/material";
+import { Modal ,Button,} from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
 import "animate.css";
 import { toast, Toaster } from "react-hot-toast";
@@ -51,10 +51,14 @@ function AdminLogin({ open, setOpen }) {
         open={open}
         className=" flex flex-row w-full bg-[#333232b7] h-screen items-center justify-center outline-none"
       >
-        <div className="animate__animated animate__backInDown rounded-md text-white flex flex-col bg-[#000000e3] py-5 gap-5 w-[70%] md:w-[50%] lg:w-[30%]  items-center justify-center">
-          <div className="flex flex-row items-center w-[80%] justify-around">
+        <div className="animate__animated animate__backInDown rounded-md outline-none text-white flex flex-col bg-[#000000e3] py-5 gap-5 w-[70%] md:w-[50%] lg:w-[30%]  items-center justify-center">
+          <div className="flex flex-row items-center w-[80%] justify-between">
             <div className="text-2xl">Signup</div>
-            <div>
+            <div
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
               <AiOutlineClose className="text-xl" />
             </div>
           </div>
@@ -113,7 +117,7 @@ function AdminLogin({ open, setOpen }) {
 
           <div className="flex flex-row gap-2 cursor-pointer">
             <div>Already have account?</div>
-            <div
+            <div className="rounded-md"
               onClick={() => {
                 setOpen(false);
               }}
@@ -121,15 +125,14 @@ function AdminLogin({ open, setOpen }) {
               Login
             </div>
           </div>
-          
-            <div className=" w-[90%] ">
-              <div>Password Recuriments:-</div>
-              <div>1. Atleast minimum 8 letter</div>
-              <div>2. Should contain at least one digit</div>
-              <div>3. Should contain at least Lower case</div>
-              <div>4. Should contain at least upper case</div>
-            </div>
-          
+
+          <div className=" w-[90%] ">
+            <div>Password Recuriments:-</div>
+            <div>1. Atleast minimum 8 letter</div>
+            <div>2. Should contain at least one digit</div>
+            <div>3. Should contain at least Lower case</div>
+            <div>4. Should contain at least upper case</div>
+          </div>
         </div>
       </Modal>
     </>
