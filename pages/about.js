@@ -107,7 +107,7 @@ function about() {
                 lineHeight: "1.5",
               }}
             >
-              True to our name we have been providingLuckycharm Tecnologies. We
+              True to our name we have been providing Luckycharm Tecnologies. We
               are a Digital Solutions Company specializing in delivering
               high-quality Web Design and Development, Mobile Applications, PLC
               Programming, Embedded System, and Automation.

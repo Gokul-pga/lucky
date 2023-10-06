@@ -1,14 +1,8 @@
-import {
-  Box,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { adminsignup } from "../pages/adminsignup";
 
 function NavBar() {
-  const [open, setOpen] = useState(false);
   const router = useRouter();
   const location = router.pathname;
 
@@ -66,6 +60,7 @@ function NavBar() {
             },
             padding: "10px 0",
             fontWeight: "bold",
+            cursor: "pointer",
           }}
         >
           <Typography
@@ -137,7 +132,7 @@ function NavBar() {
             },
           }}
           onClick={() => {
-            router.push("/adminsignup")
+            router.push("/adminlogin");
           }}
         >
           <Typography
@@ -154,7 +149,6 @@ function NavBar() {
             Admin
           </Typography>
         </Box>
-       
       </Stack>
     </>
   );

@@ -1,141 +1,202 @@
+import {
+  Box,
+  Button,
+  Modal,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { Modal ,Button,} from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
-import "animate.css";
-import { toast, Toaster } from "react-hot-toast";
+import Layout from "../components/Layout";
+import { Toaster, toast } from "react-hot-toast";
+import Adminsign from "./adminSign";
 
-function AdminLogin({ open, setOpen }) {
-  const [passwordMsg, setPasswordMsg] = useState(false); //check password recuriments
-  const passMsg = () => {
-    setPasswordMsg(true);
-  };
-
-  // code start for input datas
-  const [input, setInput] = useState({
-    name: "",
+import { adminlogin } from "@/routes/adminlogin";
+function Adminlogin() {
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const [inputdata, setInputdata] = useState({
     email: "",
+    key: "",
     password: "",
-    confirmpass: "",
   });
-  const { name, email, password, confirmpass } = input;
-  var regularExpression =
-    "^(?=.*[a-z])(?=.*[A-Z])(?=.*d)(?=.*[@$!%*?&])[A-Za-zd@$!%*?&]{8,}$";
-  //code for submitandler
-  const submithandler = () => {
-    if (name !== "" && email !== "" && password !== "" && confirmpass !== "") {
-      if (password.length >= 8 && confirmpass.length >= 8) {
-        if (password === confirmpass) {
-          console.log(input, "user Register data");
-          setInput({
-            name: "",
-            email: "",
-            password: "",
-            confirmpass: "",
-          });
-          toast.success("Sucessfull Register");
-          setPasswordMsg(false);
-        } else {
-          toast.error("password not matched");
-        }
-      } else {
-        toast.error("Atleast minimum 8 letter");
-      }
+
+  const { email, key, password } = inputdata;
+  const handlesubmit = () => {
+    if (email !== "" && key == "admin" && password !== "") {
+      adminlogin(email, password);
+      setInputdata({
+        email: "",
+        key: "",
+        password: "",
+      });
+      console.log(inputdata, "login input");
     } else {
       toast.error("All fields are mandatory");
     }
   };
+
   return (
     <>
       <Toaster />
-      <Modal
-        open={open}
-        className=" flex flex-row w-full bg-[#333232b7] h-screen items-center justify-center outline-none"
-      >
-        <div className="animate__animated animate__backInDown rounded-md outline-none text-white flex flex-col bg-[#000000e3] py-5 gap-5 w-[70%] md:w-[50%] lg:w-[30%]  items-center justify-center">
-          <div className="flex flex-row items-center w-[80%] justify-between">
-            <div className="text-2xl">Signup</div>
-            <div
-              onClick={() => {
-                setOpen(false);
+      <Layout>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            backgroundColor: "#000000d7",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+            height: "100vh",
+            zIndex: "1002",
+          }}
+        >
+          <Stack
+            gap={2}
+            direction="column"
+            sx={{
+              width: {
+                xl: "30%",
+                lg: "30%",
+                md: "50%",
+                sm: "70%",
+                xs: "70%",
+              },
+              backgroundColor: "#000000e3",
+              boxShadow: 24,
+              color: "Black",
+              p: 2,
+              borderRadius: "10px",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                alignItems: "center",
+                width: "100%",
+                padding: "0 25px",
               }}
             >
-              <AiOutlineClose className="text-xl" />
+              <div>
+                <Typography
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    fontSize: {
+                      xl: "23px",
+                      lg: "23px",
+                      md: "18px",
+                      sm: "18px",
+                      xs: "18px",
+                    },
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: "#fff",
+                  }}
+                >
+                  Admin Login
+                </Typography>
+              </div>
+              <div
+                onClick={() => {
+                  router.push("/");
+                }}
+                className="cursor-pointer"
+              >
+                <AiOutlineClose className="text-white text-xl" />
+              </div>
+            </Box>
+
+            <Box
+              gap={2}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                color: "#6699ff",
+                width: "90%",
+                padding: " 0 0",
+              }}
+            >
+              <TextField
+                sx={{
+                  color: "#fff",
+                  bgcolor: "#fff",
+                }}
+                variant="filled"
+                label="Email"
+                value={email}
+                onChange={(e) => {
+                  setInputdata({ ...inputdata, email: e.target.value });
+                }}
+              />
+
+              <TextField
+                sx={{
+                  color: "#fff",
+                  bgcolor: "#fff",
+                }}
+                variant="filled"
+                label="Secret Key"
+                value={key}
+                onChange={(e) => {
+                  setInputdata({ ...inputdata, key: e.target.value });
+                }}
+              />
+              <TextField
+                sx={{
+                  color: "#fff",
+                  bgcolor: "#fff",
+                }}
+                type="password"
+                variant="filled"
+                label="Password"
+                value={password}
+                onChange={(e) => {
+                  setInputdata({ ...inputdata, password: e.target.value });
+                }}
+              />
+            </Box>
+            <div className="flex flex-col justify-center w-[90%] gap-2">
+              <Button
+                className="logobg w-full items-center "
+                sx={{
+                  color: "#fff",
+                  // fontWeight:"bold",
+                  padding: "4px 20px",
+                  textAlign: "center",
+                  transition: "0.3s",
+                  padding: "10px 0",
+                  "&:hover": {
+                    color: "#fff",
+                  },
+                }}
+                onClick={handlesubmit}
+              >
+                Login
+              </Button>
+              <div className="flex flex-row text-white text-md gap-1 w-full justify-center cursor-pointer">
+                <div>Don't have account? </div>
+                <div
+                  onClick={() => {
+                    setOpen(true);
+                  }}
+                >
+                  Signup
+                </div>
+                {open && <Adminsign open={open} setOpen={setOpen} />}
+              </div>
             </div>
-          </div>
-
-          <div className="flex flex-col gap-3 w-[80%] ">
-            <input
-              className="px-2 py-2 outline-none text-black"
-              type="text"
-              placeholder="Name"
-              required
-              value={name}
-              onChange={(e) => {
-                setInput({ ...input, name: e.target.value });
-              }}
-              onClick={() => {
-                passMsg();
-              }}
-            />
-            <input
-              className="px-2 py-2 outline-none text-black"
-              type="text"
-              placeholder="Email"
-              required
-              value={email}
-              onChange={(e) => {
-                setInput({ ...input, email: e.target.value });
-              }}
-            />
-            <input
-              className="px-2 py-2 outline-none text-black"
-              type="text"
-              placeholder=" password"
-              required
-              value={password}
-              onChange={(e) => {
-                setInput({ ...input, password: e.target.value });
-              }}
-            />
-            <input
-              className="px-2 py-2 outline-none text-black"
-              type="text"
-              placeholder="Confirm password"
-              required
-              value={confirmpass}
-              onChange={(e) => {
-                setInput({ ...input, confirmpass: e.target.value });
-              }}
-            />
-            <button
-              onClick={submithandler}
-              className="bg-blue-400 px-2 py-2 text-xl logobg"
-            >
-              Submit
-            </button>
-          </div>
-
-          <div className="flex flex-row gap-2 cursor-pointer">
-            <div>Already have account?</div>
-            <div className="rounded-md"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              Login
-            </div>
-          </div>
-
-          <div className=" w-[90%] ">
-            <div>Password Recuriments:-</div>
-            <div>1. Atleast minimum 8 letter</div>
-            <div>2. Should contain at least one digit</div>
-            <div>3. Should contain at least Lower case</div>
-            <div>4. Should contain at least upper case</div>
-          </div>
-        </div>
-      </Modal>
+          </Stack>
+        </Box>
+      </Layout>
     </>
   );
 }
-export default AdminLogin;
+
+export default Adminlogin;

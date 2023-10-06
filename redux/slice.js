@@ -1,11 +1,18 @@
 const { createSlice } = require("@reduxjs/toolkit");
 
-const initialState = {};
+const initialState = {
+  fetchcard: [],
+};
 
 const counterSlice = createSlice({
-  name: "counter",
+  name: "luckycharm",
   initialState,
-  reducers: {},
+  reducers: {
+    setFetchcard: (state, {payload}) => {
+      state.fetchcard = payload;
+    },
+  },
 });
 
 export default counterSlice.reducer;
+export const { setFetchcard } = counterSlice.actions;

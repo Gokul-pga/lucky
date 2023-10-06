@@ -1,12 +1,12 @@
 import '@/styles/globals.css'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
-import counterReducer from "../redux/slice"
+import userReducer from "../redux/slice"
 
 export default function App({ Component, pageProps }) {
   const store =configureStore({
     reducer:{
-      counter:counterReducer,
+      tasks:userReducer,
     }
   })
   return (

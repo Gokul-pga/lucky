@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import Layout from "@/components/Layout";
-import {
-  Box,
-  Button,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
@@ -49,7 +43,6 @@ function Contact() {
       toast.error("All fields are mandatory");
     }
   };
-  
 
   return (
     <>
@@ -80,7 +73,7 @@ function Contact() {
               md: "space-around",
               xs: "space-around",
             },
-            bgcolor:"#050505e5"
+            bgcolor: "#050505e5",
           }}
         >
           <Box
@@ -113,10 +106,16 @@ function Contact() {
                 <EmailOutlinedIcon
                   sx={{
                     color: "#fff",
-                    fontSize: "29px",
+                    fontSize: {
+                      xl: "40px",
+                      lg: "40px",
+                      sm: "30px",
+                      md: "30px",
+                      xs: "30px",
+                    },
                     backgroundImage:
                       "linear-gradient(to right bottom,#333333,#1a1a1a)",
-                    padding: "10px",
+                    padding: "5px",
                     borderRadius: "10px",
                   }}
                 />
@@ -125,10 +124,10 @@ function Contact() {
                     MAIL US
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                    ......................
+                    nishanthjagan16@gmail.com
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                    ......................
+                  gokulanand2508@gmail.com
                   </Typography>
                 </Box>
               </Stack>
@@ -139,10 +138,16 @@ function Contact() {
                 <LocalPhoneOutlinedIcon
                   sx={{
                     color: "#fff",
-                    fontSize: "29px",
+                    fontSize: {
+                      xl: "40px",
+                      lg: "40px",
+                      sm: "30px",
+                      md: "30px",
+                      xs: "30px",
+                    },
                     backgroundImage:
                       "linear-gradient(to right bottom,#333333,#1a1a1a)",
-                    padding: "10px",
+                    padding: "5px",
                     borderRadius: "10px",
                   }}
                 />
@@ -155,10 +160,10 @@ function Contact() {
                     CONTACT US
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                    ......................
+                    +919790109323
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                    ......................
+                    +919500593141
                   </Typography>
                 </Box>
               </Stack>
@@ -169,10 +174,16 @@ function Contact() {
                 <RoomOutlinedIcon
                   sx={{
                     color: "#fff",
-                    fontSize: "29px",
+                    fontSize: {
+                      xl: "40px",
+                      lg: "40px",
+                      sm: "30px",
+                      md: "30px",
+                      xs: "30px",
+                    },
                     backgroundImage:
                       "linear-gradient(to right bottom,#333333,#1a1a1a)",
-                    padding: "10px",
+                    padding: "5px",
                     borderRadius: "10px",
                   }}
                 />
@@ -181,10 +192,10 @@ function Contact() {
                     LOCATION
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                    ......................
+                  Saravanapatti main road,
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                    ......................
+                    Coimbatore - 641035
                   </Typography>
                 </Box>
               </Stack>
@@ -399,7 +410,7 @@ function Contact() {
                   fontWeight: "bold",
                   backgroundColor: "#4dc3ff",
                   padding: "5px 8px",
-                  color: "#fff",
+                  color: "#000",
                   borderRadius: "5px",
                   textAlign: "center",
                   transition: "0.3s",

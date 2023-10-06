@@ -24,6 +24,6 @@ export const contactDetails = async (name, email, phone, subject, message) => {
         toast.success("Thankyou for your response");
       });
   } catch (error) {
-    console.log(error, "POST METHOD");
+    console.log(error, "CONTACT POST METHOD");
   }
 };

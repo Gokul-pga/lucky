@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 import "animate.css";
 import VerticalAlignTopIcon from "@mui/icons-material/VerticalAlignTop";
-import { adminsignup } from "@/pages/adminsignup";
+import { adminsignup } from "@/pages/adminlogin";
 
 function NavBar() {
   const router = useRouter();
@@ -134,7 +134,7 @@ function NavBar() {
               padding: "0 10px",
             }}
           >
-            <div>
+            <div className="animate__animated animate__bounceIn">
               {Nav.map((item, index) => {
                 return (
                   <Button
@@ -160,6 +160,7 @@ function NavBar() {
               })}
             </div>
             <div
+              className="animate__animated animate__pulse"
               onClick={() => {
                 router.push("/adminsignup");
               }}

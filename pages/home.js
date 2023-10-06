@@ -2,13 +2,17 @@ import Layout from "@/components/Layout";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useRouter } from "next/router";
-import Coursecard from "@/homepgcomponent/Coursecard";
 import Modalpage from "../components/Modalpage";
 import { useState } from "react";
-import Image from "next/image";
+import { RiArrowDownSLine } from "react-icons/ri";
+import CourseCard from "@/components/CourseCard";
+import { useSelector } from "react-redux";
 
 function Homepg() {
   const [open, setOpen] = useState(false);
+  const [show, setShow] = useState(true);
+  const fetchcard = useSelector((state) => state.tasks.fetchcard);
+
   const router = useRouter();
   return (
     <>
@@ -71,16 +75,10 @@ function Homepg() {
                   // bgcolor: "palegreen",
                   fontWeight: "bold",
                   fontFamily: "revert-layer",
-                  color: "#4dc3ff",
+                  color: "#fff",
                 }}
               >
-                Welcome To{" "}
-                <span
-                  className="logohometext"
-                  style={{ fontFamily: "revert-layer", fontWeight: "bold" }}
-                >
-                  LuckyCharm Technologies
-                </span>
+                Welcome To LuckyCharm Technologies
               </Typography>
               <Box>
                 <Typography
@@ -95,7 +93,7 @@ function Homepg() {
                     lineHeight: "2em",
                     fontFamily: "revert-layer",
                     fontWeight: "bold",
-                    color: "#4dc3ff",
+                    color: "#fff",
                   }}
                 >
                   Let's Work With together
@@ -104,7 +102,8 @@ function Homepg() {
             </Box>
 
             <Box>
-              <Button className="bg-gray-600 "
+              <Button
+                className="bg-gray-600 "
                 sx={{
                   padding: {
                     xl: "5px 80px",
@@ -133,7 +132,20 @@ function Homepg() {
             </Box>
           </Stack>
 
-          <Coursecard />
+          <div className="flex flex-col gap-5 w-full items-center justify-between overflow-hidden">
+            <div
+              className="flex flex-row items-center mt-5 w-full justify-center text-lg md:text-3xl text-white font-medium "
+              onClick={() => {
+                setShow((p) => !p);
+              }}
+            >
+              <div>Our Offerings</div>
+              <RiArrowDownSLine />
+            </div>
+            {show && (
+              <CourseCard />
+            )}
+          </div>
         </Box>
       </Layout>
     </>
