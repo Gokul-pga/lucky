@@ -5,7 +5,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 import "animate.css";
 import VerticalAlignTopIcon from "@mui/icons-material/VerticalAlignTop";
-import { adminsignup } from "@/pages/adminlogin";
 
 function NavBar() {
   const router = useRouter();
@@ -162,7 +161,7 @@ function NavBar() {
             <div
               className="animate__animated animate__pulse"
               onClick={() => {
-                router.push("/adminsignup");
+                router.push("/adminlogin");
               }}
             >
               <Typography className="bg-gray-400 px-2 rounded-sm text-md mt-1">
