@@ -138,7 +138,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#fff",
+                  color: "#000",
                   textAlign: "center",
                   fontWeight: "600",
                   "&:hover": {
@@ -238,7 +238,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#fff",
+                  color: "#000",
                   textAlign: "center",
                   fontWeight: "bold",
                   "&:hover": {
@@ -389,7 +389,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#fff",
+                  color: "#000",
                   textAlign: "center",
                   fontWeight: "bold",
                   fontWeight: "bold",
@@ -495,7 +495,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#fff",
+                  color: "#000",
                   textAlign: "center",
                   fontWeight: "bold",
                   "&:hover": {
@@ -642,7 +642,7 @@ function Work() {
                   padding: "5px 8px",
                   borderRadius: "10px",
                   backgroundColor: "#fff",
-                  color: "#fff",
+                  color: "#000",
                   textAlign: "center",
                   fontWeight: "bold",
                   "&:hover": {
