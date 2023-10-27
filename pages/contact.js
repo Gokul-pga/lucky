@@ -127,7 +127,7 @@ function Contact() {
                     nishanthjagan16@gmail.com
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                  gokulanand2508@gmail.com
+                    gokulanand2508@gmail.com
                   </Typography>
                 </Box>
               </Stack>
@@ -192,7 +192,7 @@ function Contact() {
                     LOCATION
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
-                  Saravanapatti main road,
+                    Saravanapatti main road,
                   </Typography>
                   <Typography sx={{ color: "#e3ebebe0", fontSize: "14px" }}>
                     Coimbatore - 641035
@@ -325,6 +325,7 @@ function Contact() {
               color: "#6699ff",
               borderRadius: "20px",
               justifyContent: "space-around",
+              marginTop: "55px",
             }}
           >
             <Typography

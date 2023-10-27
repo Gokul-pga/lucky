@@ -14,6 +14,7 @@ import { Toaster, toast } from "react-hot-toast";
 import Adminsign from "./adminSign";
 
 import { adminlogin } from "@/routes/adminlogin";
+
 function Adminlogin() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ function Adminlogin() {
 
   const { email, key, password } = inputdata;
   const handlesubmit = () => {
-    if (email !== "" && key == "admin" && password !== "") {
+    if (email !== "" && key == "admin"  && password !== "") {
       adminlogin(email, password);
       setInputdata({
         email: "",

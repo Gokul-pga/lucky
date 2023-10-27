@@ -1,6 +1,8 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import { Expand } from "@mui/icons-material";
+import { expandMyScreen } from "@/pages/expandscreen";
 
 function NavBar() {
   const router = useRouter();
@@ -38,8 +40,8 @@ function NavBar() {
             xl: "row",
             lg: "row",
             md: "row",
-            sm: "column",
-            xs: "column",
+            sm: "row",
+            xs: "row",
           },
           width: "100%",
           alignItems: "center",
@@ -126,28 +128,22 @@ function NavBar() {
             display: {
               xl: "block",
               lg: "block",
-              md: "none",
+              md: "block",
               sm: "none",
               xs: "none",
             },
           }}
+          
+        >
+          {/* <IconButton onClick={expandMyScreen}>
+            <Expand style={{color:"#fff"}}/>
+          </IconButton> */}
+          <button className="bg-white text-black font-medium px-3 py-1 rounded-sm text-md mt-1" 
           onClick={() => {
             router.push("/adminlogin");
-          }}
-        >
-          <Typography
-            sx={{
-              alignItems: "center",
-              justifyContent: "space-around",
-              padding: "4px 15px",
-              backgroundColor: "grey",
-              color: "#fff",
-              borderRadius: 1,
-              cursor: "pointer",
-            }}
-          >
+          }}>
             Admin
-          </Typography>
+          </button>
         </Box>
       </Stack>
     </>

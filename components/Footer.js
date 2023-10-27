@@ -39,7 +39,8 @@ function Footer() {
       >
         {/*  -------------------- Footer Description Start ---------------------*/}
         <Stack>
-          <Box className="logotext"
+          <Box
+            className="logotext"
             sx={{
               color: "#b5bbbd",
               margin: "10px 30px",
@@ -96,34 +97,64 @@ function Footer() {
                   color: "#b5bbbd",
                 }}
               >
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Automation
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Embedded System
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Mobile App Developement
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   PLC Programming
                 </Typography>
-                <Typography sx={{fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Web Developement
                 </Typography>
               </Box>
@@ -149,34 +180,64 @@ function Footer() {
                   color: "#b5bbbd",
                 }}
               >
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Automobile
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Mechanical
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Mechatronics
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Production
                 </Typography>
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   Robotics
                 </Typography>
               </Box>
@@ -197,10 +258,16 @@ function Footer() {
                   color: "#b5bbbd",
                 }}
               >
-                <Typography sx={{ fontSize: "15px", lineHeight: "2em", "&:hover":{
-                    color:'#fff',
-                    cursor:"pointer"
-                  } }}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    lineHeight: "2em",
+                    "&:hover": {
+                      color: "#fff",
+                      cursor: "pointer",
+                    },
+                  }}
+                >
                   info@luckycharm.com
                 </Typography>
               </Box>
@@ -213,13 +280,15 @@ function Footer() {
       {/*  -------------------- Footer Box End ---------------------*/}
 
       {scroll && (
-        <IconButton className="bg-gray-400"
+        <IconButton
+          className="bg-gray-400"
           sx={{
             position: "fixed",
             bottom: 20,
             right: 30,
             color: "#000",
             transition: "0.5s",
+            zIndex:"1000",
             "&:hover": {
               bgcolor: "#595959",
               color: "#fff",

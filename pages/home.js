@@ -38,7 +38,6 @@ function Homepg() {
               width: "80%",
               padding: "40px 20px",
               // boxShadow: "10px 10px 5px #cccccc",
-              mt: "10px",
               borderRadius: "10px",
             }}
           >
@@ -142,9 +141,7 @@ function Homepg() {
               <div>Our Offerings</div>
               <RiArrowDownSLine />
             </div>
-            {show && (
-              <CourseCard />
-            )}
+            {show && <CourseCard />}
           </div>
         </Box>
       </Layout>

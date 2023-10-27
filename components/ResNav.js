@@ -127,7 +127,7 @@ function NavBar() {
               width: "100%",
               position: "absolute",
               zIndex: "1000",
-              backgroundColor: "#000000d7",
+              backgroundColor: "#000",
               borderRadius: "0 0 15px 15px",
               justifyContent: "space-between",
               padding: "0 10px",
@@ -158,15 +158,15 @@ function NavBar() {
                 );
               })}
             </div>
-            <div
-              className="animate__animated animate__pulse"
-              onClick={() => {
-                router.push("/adminlogin");
-              }}
-            >
-              <Typography className="bg-gray-400 px-2 rounded-sm text-md mt-1">
+            <div className="animate__animated animate__pulse">
+              <button
+                className="bg-gray-400 px-2 rounded-sm text-md font-medium mt-1"
+                onClick={() => {
+                  router.push("/adminlogin");
+                }}
+              >
                 Admin
-              </Typography>
+              </button>
             </div>
           </Box>
         )}
