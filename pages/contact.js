@@ -62,7 +62,7 @@ function Contact() {
             flexDirection: {
               xl: "row",
               lg: "row",
-              md: "column",
+              md: "row",
               sm: "column",
               xs: "column",
             },

@@ -164,7 +164,7 @@ function Modalpage({ open, setOpen }) {
           >
             <Button
               sx={{
-                bgcolor: "#000",
+                backgroundColor: "#fff",
                 padding: "5px 8px",
                 color: "#000",
                 // fontWeight:"bold",
@@ -186,7 +186,7 @@ function Modalpage({ open, setOpen }) {
             <Button
               onClick={handleClose}
               sx={{
-                backgroundColor: "black",
+                backgroundColor:"#fff",
                 padding: "5px 20px",
                 borderRadius: "4px",
                 color: "#000",
