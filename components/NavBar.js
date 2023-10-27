@@ -1,8 +1,6 @@
 import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { Expand } from "@mui/icons-material";
-import { expandMyScreen } from "@/pages/expandscreen";
 
 function NavBar() {
   const router = useRouter();
@@ -133,15 +131,13 @@ function NavBar() {
               xs: "none",
             },
           }}
-          
         >
-          {/* <IconButton onClick={expandMyScreen}>
-            <Expand style={{color:"#fff"}}/>
-          </IconButton> */}
-          <button className="bg-white text-black font-medium px-3 py-1 rounded-sm text-md mt-1" 
-          onClick={() => {
-            router.push("/adminlogin");
-          }}>
+          <button
+            className="bg-white text-black font-medium px-3 py-1 rounded-sm text-md mt-1"
+            onClick={() => {
+              router.push("/adminlogin");
+            }}
+          >
             Admin
           </button>
         </Box>
