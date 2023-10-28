@@ -57,6 +57,14 @@ function Footer() {
               LuckyCharm
             </Typography>
           </Box>
+          <button
+            className="bg-white w-32 text-black font-medium px-3 py-1 ml-8 rounded-sm text-md mt-1"
+            onClick={() => {
+              router.push("/adminlogin");
+            }}
+          >
+            Admin
+          </button>
 
           <Stack
             flex={1}
@@ -288,7 +296,7 @@ function Footer() {
             right: 30,
             color: "#000",
             transition: "0.5s",
-            zIndex:"1000",
+            zIndex: "1000",
             "&:hover": {
               bgcolor: "#595959",
               color: "#fff",
