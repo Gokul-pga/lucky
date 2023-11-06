@@ -12,7 +12,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import Layout from "../components/Layout";
 import { Toaster, toast } from "react-hot-toast";
 import Adminsign from "./adminSign";
-
 import { adminlogin } from "@/routes/adminlogin";
 
 function Adminlogin() {
