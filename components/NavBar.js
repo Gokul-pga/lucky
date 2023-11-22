@@ -135,7 +135,7 @@ function NavBar() {
           <button
             className="bg-white text-black font-medium px-3 py-1 rounded-sm text-md mt-1"
             onClick={() => {
-              router.push("/adminlogin");
+              router.push("/adminLogin");
             }}
           >
             Admin
