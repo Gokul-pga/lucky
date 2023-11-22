@@ -162,7 +162,7 @@ function NavBar() {
               <button
                 className="bg-gray-400 px-2 rounded-sm text-md font-medium mt-1"
                 onClick={() => {
-                  router.push("/adminlogin");
+                  router.push("/adminLogin");
                 }}
               >
                 Admin
