@@ -71,7 +71,7 @@ function NavBar() {
               router.push("/");
             }}
           >
-            Zonelogic 
+            ZoneLogic 
           </Typography>
         </Box>
 
