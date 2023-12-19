@@ -71,7 +71,7 @@ function NavBar() {
               router.push("/");
             }}
           >
-            LuckyCharm
+            Zonelogic 
           </Typography>
         </Box>
 
