@@ -54,7 +54,7 @@ function Footer() {
               fontWeight="bold"
               fontFamily="revert-layer"
             >
-              LuckyCharm
+              ZoneLogic 
             </Typography>
           </Box>
 
