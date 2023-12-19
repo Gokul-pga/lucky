@@ -115,6 +115,7 @@ function Homepg() {
                   borderRadius: "5px",
                   transition: "0.5s",
                   color: "#fff",
+backgroundColor: "#66ccff",
                   "&:hover": {
                     borderRadius: "5px",
                     color: "#fff",
