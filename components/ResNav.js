@@ -90,8 +90,10 @@ function NavBar() {
               },
             }}
           >
-            <Typography
-              className="logotext"
+            <Typography 
+
+onClick={() => {
+              router.push("/"); }}              className="logotext"
               sx={{ fontSize: "20px", fontFamily: "serif", color: "#fff" }}
             >
               ZoneLogic
