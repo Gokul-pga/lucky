@@ -94,7 +94,7 @@ function NavBar() {
               className="logotext"
               sx={{ fontSize: "20px", fontFamily: "serif", color: "#fff" }}
             >
-              LuckyCharm
+              ZoneLogic
             </Typography>
           </Box>
 
